@@ -12,6 +12,8 @@ If you're interested in reading things I've written, you can find them on <a hre
 
 Interested in chatting? Let's talk on [Twitter 🐦](https://twitter.com/RabbiGreenberg)!
 
+<h4 align="center"><a href="https://www.bengreenberg.dev">My Site</a> &bull; <a href="https://twitter.com/rabbigreenberg">Twitter</a> &bull; <a href="https://dev.to/benhayehudi">Blog</a> &bull; <a href="https://www.linkedin.com/in/rabbigreenberg/">LinkedIn</a></h4>
+
 <h3>
 &#x202b; אהלן! 👋
 </h3>
