@@ -1,4 +1,4 @@
-# [![ben greenberg header](https://github.com/bencgreenberg/bencgreenberg/blob/master/ben_greenberg.png)](https://bengreenberg.dev)
+# [![ben greenberg header](https://github.com/bencgreenberg/bencgreenberg/blob/master/ben_greenberg.png)](https://www.bengreenberg.dev)
 
 ### Hi there 👋
 
