@@ -16,6 +16,8 @@ Interested in chatting? Let's talk on [Twitter 🐦](https://twitter.com/RabbiGr
 
 <h4 align="center"><a href="https://www.bengreenberg.dev">My Site</a> &bull; <a href="https://twitter.com/rabbigreenberg">Twitter</a> &bull; <a href="https://dev.to/bengreenberg">Blog</a> &bull; <a href="https://www.linkedin.com/in/rabbigreenberg/">LinkedIn</a></h4>
 
+<p align="center"><img src="https://metrics.lecoq.io/bencgreenberg" /></p>
+
 <h3>
 &#x202b; אהלן! 👋
 </h3>
