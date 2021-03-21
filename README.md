@@ -4,9 +4,7 @@
 
 It's so nice of you stop by! ☺️
 
-I work as a Developer Advocate 🥑 at [Vonage](https://github.com/Nexmo) and live near Tel Aviv in Israel 🇮🇱. 
-
-We are a remote-friendly globally distributed team of people with all kinds of skills and interests. If you're looking for a new role, take a look at [the openings](https://grnh.se/feb647932us)!
+I work as a Developer Advocate 🥑 at [Orbit](https://www.orbit.love) and live near Tel Aviv in Israel 🇮🇱. 
 
 I also am a co-organizer of [israel.rb 💎](https://www.facebook.com/groups/272757750683415), which is Israel's Ruby meetup community. While I work in a variety of languages, Ruby has a special place in my 💙. 
 
@@ -16,7 +14,6 @@ Interested in chatting? Let's talk on [Twitter 🐦](https://twitter.com/RabbiGr
 
 <h4 align="center"><a href="https://www.bengreenberg.dev">My Site</a> &bull; <a href="https://twitter.com/rabbigreenberg">Twitter</a> &bull; <a href="https://dev.to/bengreenberg">Blog</a> &bull; <a href="https://www.linkedin.com/in/rabbigreenberg/">LinkedIn</a></h4>
 
-<p align="center"><img src="https://metrics.lecoq.io/bencgreenberg" /></p>
 
 <h3>
 &#x202b; אהלן! 👋
@@ -25,9 +22,7 @@ Interested in chatting? Let's talk on [Twitter 🐦](https://twitter.com/RabbiGr
 <p>
 &#x202b; תודה על הביקור!
 
-&#x202b; אני עובד כDeveloper Advocate 🥑 ב- <a href="https://developer.nexmo.com">Vonage</a> ואני גר ליד תל אביב בישראל 🇮🇱.
-
-&#x202b; אנו צוות עבודה מרוחק של אנשים מכל העולם עם כל מיני כישורים ותחומי עניין. אם אתם מחפשים תפקיד חדש, הסתכל ב <a href="https://grnh.se/feb647932us"> הפתחים </a>!
+&#x202b; אני עובד כDeveloper Advocate 🥑 ב- <a href="https://www.orbit.love">Orbit</a> ואני גר ליד תל אביב בישראל 🇮🇱.
 
 &#x202b; אני גם מארגן של <a href="https://www.facebook.com/groups/272757750683415"> israel.rb 💎 </a>, שהיא קהילת המפגשים של רובי בישראל. אני עובד במגוון שפות, ובכל זאת לרובי יש מקום מיוחד ב-💙 שלי.
 
