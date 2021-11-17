@@ -4,7 +4,7 @@
 
 It's so nice of you stop by! ☺️
 
-I work as a Developer Advocate 🥑 at [New Relic](https://www.therelicans.com/) and live near Tel Aviv in Israel 🇮🇱. 
+I work as a Lead Developer Relations Engineer 🥑 at [New Relic](https://www.therelicans.com/) and live near Tel Aviv in Israel 🇮🇱. 
 
 I also am a co-organizer of [israel.rb 💎](https://www.facebook.com/groups/272757750683415), which is Israel's Ruby meetup community. While I work in a variety of languages, Ruby has a special place in my 💙. 
 
@@ -22,7 +22,7 @@ Interested in chatting? Let's talk on [Twitter 🐦](https://twitter.com/RabbiGr
 <p>
 &#x202b; תודה על הביקור!
 
-&#x202b; אני עובד כDeveloper Advocate 🥑 ב- <a href="https://www.therelicans.com/">New Relic</a> ואני גר ליד תל אביב בישראל 🇮🇱.
+&#x202b; אני עובד כLead Developer Relations Engineer 🥑 ב- <a href="https://www.therelicans.com/">New Relic</a> ואני גר ליד תל אביב בישראל 🇮🇱.
 
 &#x202b; אני גם מארגן של <a href="https://www.facebook.com/groups/272757750683415"> israel.rb 💎 </a>, שהיא קהילת המפגשים של רובי בישראל. אני עובד במגוון שפות, ובכל זאת לרובי יש מקום מיוחד ב-💙 שלי.
 
