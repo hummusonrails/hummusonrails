@@ -1,32 +1,64 @@
-# [![ben greenberg header](https://github.com/bencgreenberg/bencgreenberg/blob/master/ben_greenberg.png)](https://www.bengreenberg.dev)
+# [![ben greenberg header](./header.png)](https://www.bengreenberg.dev)
 
-### Hi there 👋
+### [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Hi+there!+👋)](https://git.io/typing-svg)
 
-It's so nice of you stop by! ☺️
+<a href="https://twitter.com/rabbigreenberg" target="_blank">
+  <img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 2px;" />
+</a>
+<a href="https://dev.to/bengreenberg" target="_blank">
+  <img src=https://img.shields.io/badge/dev.to-%2308090A.svg?&style=for-the-badge&logo=dev.to&logoColor=white alt=devto style="margin-bottom: 2px;" />
+</a>
+<a href=https://www.getrevue.co/profile/hummusonrails" target="_blank">
+	<img src="https://img.shields.io/badge/revue%20-%239146FF.svg?&style=for-the-badge&logo=Revue&logoColor=white" alt="reddit" style="margin-bottom: 2px;" />
+</a> 
+<a href="https://linkedin.com/in/rabbigreenberg" target="_blank">
+  <img src=https://img.shields.io/badge/linkedin-%231E77B2.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 2px;" />
+</a>
+<a href="https://www.youtube.com/channel/UC3Ug3f0ZZEBl8RQoFI6YNNQ" target="_blank">
+  <img src=https://img.shields.io/badge/youtube-%23EE4831.svg?&style=for-the-badge&logo=youtube&logoColor=white alt=youtube style="margin-bottom: 2px;" />
+</a>  
+<a href="https://www.twitch.tv/hummusonrails" target="_blank">
+	<img src="https://img.shields.io/badge/twitch%20-%239146FF.svg?&style=for-the-badge&logo=Twitch&logoColor=white" alt="twitch" style="margin-bottom: 2px;" />
+</a>  
+<a href=https://www.reddit.com/r/hummusonrails/" target="_blank">
+	<img src="https://img.shields.io/badge/reddit%20-%239146FF.svg?&style=for-the-badge&logo=Reddit&logoColor=white" alt="reddit" style="margin-bottom: 2px;" />
+</a>
 
-I work as a Lead Developer Relations Engineer 🥑 at [New Relic](https://www.therelicans.com/) and live near Tel Aviv in Israel 🇮🇱. 
+<table>
+<tr>
+<td width="50%">
+<h3>It's so nice of you stop by! ☺️</h3>
 
-I also am a co-organizer of [israel.rb 💎](https://www.facebook.com/groups/272757750683415), which is Israel's Ruby meetup community. While I work in a variety of languages, Ruby has a special place in my 💙. 
+I work as a Lead Developer Relations Engineer 🥑 at [New Relic](https://www.newrelic.com/) where I manage a team of developer advocates, and drive forward adoption of observability in the developer community.
 
-If you're interested in reading things I've written, you can find them on <a href="https://dev.to/benhayehudi"><img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Ben Greenberg's DEV Profile" height="30" width="30"></a>.
+In my personal life, you can find me involved in some of these projects:
 
-Interested in chatting? Let's talk on [Twitter 🐦](https://twitter.com/RabbiGreenberg)!
+* I am building [hirethePIVOT](https://hirethepivot.com), an open source reverse job board for career changers. 
+* Co-founded and co-organize the [israel.rb](https://www.facebook.com/groups/272757750683415) meetup community.
+* Published the [Torah && Tech](https://torahandtech.dev) weekly newsletter and book.
 
-<h4 align="center"><a href="https://www.bengreenberg.dev">My Site</a> &bull; <a href="https://twitter.com/rabbigreenberg">Twitter</a> &bull; <a href="https://dev.to/bengreenberg">Blog</a> &bull; <a href="https://www.linkedin.com/in/rabbigreenberg/">LinkedIn</a></h4>
+Some recent talks I've given at conferences include:
 
+* [On Being An Early Career Dev In Your 30s](https://youtu.be/_YhBMu43Lm4) at RubyConf
+* [Create Tooling That Works for Everyone with GitHub Actions](https://youtu.be/rSpvVL4RxH8) at DevOpsDays Buffalo
+* [Transforming a Docs Portal into a Platform Tool](http://mirroronet.pl/pub/mirrors/video.fosdem.org/2021/D.docs/ttdstation.mp4) at FOSDEM
+* [Roots for Developer Advocates](https://www.youtube.com/watch?v=o07iRbFaAy0) at DevRelCon
+* [Ruby and Sentiment Analysis](https://youtu.be/lwp2A54e3fs) at NUS Hackers
 
-<h3>
-&#x202b; אהלן! 👋
-</h3>
+I've also had a chance to chat with some great people on podcasts including:
 
-<p>
-&#x202b; תודה על הביקור!
+* [The Ruby on Rails Podcast](https://fireside.fm/episode/3OC19MC9+jwYA3Iyf)
+* [Kongcast](https://www.youtube.com/watch?v=5TXiFoekXb8)
+* [Polyglot](https://podcasts.apple.com/us/podcast/polyglot/id1553516392)
 
-&#x202b; אני עובד כLead Developer Relations Engineer 🥑 ב- <a href="https://www.therelicans.com/">New Relic</a> ואני גר ליד תל אביב בישראל 🇮🇱.
+Interested in chatting? Let's talk on [Twitter](https://twitter.com/RabbiGreenberg)!
 
-&#x202b; אני גם מארגן של <a href="https://www.facebook.com/groups/272757750683415"> israel.rb 💎 </a>, שהיא קהילת המפגשים של רובי בישראל. אני עובד במגוון שפות, ובכל זאת לרובי יש מקום מיוחד ב-💙 שלי.
+</td>
 
-&#x202b; אם אתם מעוניינים לקרוא דברים שכתבתי, אתם יכולים למצוא אותם ב <a href="https://dev.to/bengreenberg"><img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Ben Greenberg's DEV Profile" height="30" width="30"></a>.
-
-&#x202b; מעוניין בצ'אט? בואו נדבר ב <a href="https://twitter.com/RabbiGreenberg"> טוויטר 🐦 </a>!
-</p>
+<td style="border:0" width="20%">
+<div align="center">
+<img src="https://www.bengreenberg.dev/assets/images/ben_and_matz.jpeg" align="center" style="width: 100%" />
+</div>  
+</td>
+</tr>
+</table>
