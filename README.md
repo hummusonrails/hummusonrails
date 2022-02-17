@@ -24,9 +24,9 @@
 	<img src="https://img.shields.io/badge/reddit%20-%239146FF.svg?&style=for-the-badge&logo=Reddit&logoColor=white" alt="reddit" style="margin-bottom: 2px;" />
 </a>
 
-<table border="0">
-<tr>
-<td width="50%">
+<table style="border: none;">
+<tr style="border: none;">
+<td style="border: none;" width="50%">
 <h3>It's so nice of you stop by! ☺️</h3>
 
 I work as a Lead Developer Relations Engineer 🥑 at [New Relic](https://www.newrelic.com/) where I manage a team of developer advocates, and drive forward adoption of observability in the developer community.
@@ -55,7 +55,7 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/RabbiGreenbe
 
 </td>
 
-<td style="border:0" width="20%">
+<td style="border: none;" width="40%">
 <div align="center">
 <img src="https://www.bengreenberg.dev/assets/images/ben_and_matz.jpeg" align="center" style="width: 100%" />
 </div>  
