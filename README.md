@@ -24,7 +24,7 @@
 	<img src="https://img.shields.io/badge/reddit%20-%239146FF.svg?&style=for-the-badge&logo=Reddit&logoColor=white" alt="reddit" style="margin-bottom: 2px;" />
 </a>
 
-<table>
+<table border="0">
 <tr>
 <td width="50%">
 <h3>It's so nice of you stop by! ☺️</h3>
