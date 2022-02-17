@@ -2,6 +2,7 @@
 
 ### [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Hi+there!+👋)](https://git.io/typing-svg)
 
+<div align="center">
 <a href="https://twitter.com/rabbigreenberg" target="_blank">
   <img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 2px;" />
 </a>
@@ -23,6 +24,7 @@
 <a href=https://www.reddit.com/r/hummusonrails/" target="_blank">
 	<img src="https://img.shields.io/badge/reddit%20-%239146FF.svg?&style=for-the-badge&logo=Reddit&logoColor=white" alt="reddit" style="margin-bottom: 2px;" />
 </a>
+</div>
 
 <table style="border: none;">
 <tr style="border: none;">
