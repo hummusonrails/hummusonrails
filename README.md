@@ -31,7 +31,7 @@
 <td style="border: none;" width="50%">
 <h3>It's so nice of you stop by! ☺️</h3>
 
-I work as a Lead Developer Relations Engineer 🥑 at [New Relic](https://www.newrelic.com/) where I manage a team of developer advocates, and drive forward adoption of observability in the developer community.
+I work as a Senior Developer Relations Engineer 🥑 at [Parity](https://www.parity.io/) where I work with a globally distributed team dedicated to improving developer experience and building developer community.
 
 In my personal life, you can find me involved in some of these projects:
 
