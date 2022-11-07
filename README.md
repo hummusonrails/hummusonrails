@@ -24,6 +24,9 @@
 <a href=https://www.reddit.com/r/hummusonrails/" target="_blank">
 	<img src="https://img.shields.io/badge/reddit%20-%239146FF.svg?&style=for-the-badge&logo=Reddit&logoColor=white" alt="reddit" style="margin-bottom: 2px;" />
 </a>
+<a rel="me" href="https://fosstodon.org/@hummusonrails">
+	<img src="https://img.shields.io/badge/mastodon-%231E77B2.svg?&style=for-the-badge&logo=Mastodon&logoColor=white" alt="mastodon" style="margin-bottom: 2px;" />
+</a>	
 </div>
 
 <table style="border: none;">
