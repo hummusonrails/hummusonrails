@@ -60,10 +60,9 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/RabbiGreenbe
 
 <td style="border: none;" width="40%">
 <div align="center">
-<img src="https://www.bengreenberg.dev/assets/images/ben_and_matz.jpeg" align="center" style="width: 100%" />
+  <img src="https://www.bengreenberg.dev/assets/images/ben_and_matz.jpeg" align="center" style="width: 100%" />
+  <p>Meeting Matz, the creator of Ruby, at RubyConf</p>
 </div>
-
-
 
 ### Recent Blog Posts
 
