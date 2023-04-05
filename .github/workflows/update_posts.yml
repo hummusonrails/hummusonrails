@@ -1,0 +1,27 @@
+name: Update Recent Blog Posts
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Run once a week at 00:00 (midnight) on Sunday
+  workflow_dispatch:
+
+jobs:
+  update_posts:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.0
+
+    - name: Install dependencies
+      run: gem install httparty nokogiri octokit
+
+    - name: Update recent blog posts in README.md
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: ruby update_posts.rb
