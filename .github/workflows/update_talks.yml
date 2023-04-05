@@ -1,0 +1,33 @@
+name: Update Recent Talks
+
+on:
+  schedule:
+    - cron: "0 0 1 * *" # Run the action on the first day of every month at 00:00 UTC
+  workflow_dispatch: 
+
+jobs:
+  update_recent_talks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+
+      - name: Install dependencies
+        run: |
+          gem install httparty
+          gem install nokogiri
+          gem install octokit
+
+      - name: Scrape talks and update README
+        run: ruby ./.github/scripts/update_talks.rb
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
