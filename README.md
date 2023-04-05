@@ -1,7 +1,5 @@
 # [![ben greenberg header](./new_header.png)](https://www.bengreenberg.dev)
 
-### [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Hi+there!+👋)](https://git.io/typing-svg)
-
 <div align="center">
 <a href="https://twitter.com/rabbigreenberg" target="_blank">
   <img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 2px;" />
