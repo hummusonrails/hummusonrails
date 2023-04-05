@@ -43,7 +43,6 @@ In my personal life, you can find me involved in some of these projects:
 
 
 Some recent talks I've given at conferences include:
-
 * [Rust for High-Level Developers](https://that.us/events/wi/2023/) at THAT Conference Wisconsin
 * [Rust for High-Level Developers](https://www.kcdc.info/) at KCDC
 * [Rust for High-Level Developers](https://devoxx.gr/) at Devoxx Greece
