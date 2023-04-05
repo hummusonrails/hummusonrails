@@ -72,17 +72,6 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/RabbiGreenbe
 * [Accelerating Substrate Blockchain Testing with GitHub Codespaces](https://www.bengreenberg.dev/posts/2023-03-15-accelerating-substrate-codespaces/)
 * [From High-Level to Systems Programming: A Practical Guide to Rust, Part 2](https://www.bengreenberg.dev/posts/2023-01-02-high-level-to-rust-part-2/)
 * [From High-Level to Systems Programming: A Practical Guide to Rust, Part 1](https://www.bengreenberg.dev/posts/2022-12-30-high-level-to-rust-part-1/)
-
-
-
-### Recent Blog Posts
-
-
-* [A ChatGPT GitHub Action for Reviewing Text for Potentially Discriminatory Language](/posts/2023-04-04-github-action-gpt-language-check/)
-* [StackExchange Tutorial Themes: Using ChatGPT to Discover Relevant Topics](/posts/2023-03-31-stackexchange-gpt-tutorial-themes/)
-* [Accelerating Substrate Blockchain Testing with GitHub Codespaces](/posts/2023-03-15-accelerating-substrate-codespaces/)
-* [From High-Level to Systems Programming: A Practical Guide to Rust, Part 2](/posts/2023-01-02-high-level-to-rust-part-2/)
-* [From High-Level to Systems Programming: A Practical Guide to Rust, Part 1](/posts/2022-12-30-high-level-to-rust-part-1/)
   
 </td>
 </tr>
