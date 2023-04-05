@@ -1,4 +1,4 @@
-# [![ben greenberg header](./header.png)](https://www.bengreenberg.dev)
+# [![ben greenberg header](./new_header.png)](https://www.bengreenberg.dev)
 
 ### [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Hi+there!+👋)](https://git.io/typing-svg)
 
