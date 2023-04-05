@@ -21,7 +21,8 @@ jobs:
     - name: Install dependencies
       run: gem install httparty nokogiri octokit
 
-    - name: Update recent blog posts in README.md
+    - name: Scrape posts and update README
+      run: ruby ./.github/scripts/update_posts.rb
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: ruby update_posts.rb
+        GITHUB_REPOSITORY: ${{ github.repository }}
