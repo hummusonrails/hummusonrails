@@ -40,8 +40,6 @@ In my personal life, you can find me involved in some of these projects:
 * Co-founded and co-organize the [israel.rb](https://www.facebook.com/groups/272757750683415) meetup community.
 * Published the [Torah && Tech](https://torahandtech.dev) weekly newsletter and book.
 
-
-
 Some recent talks I've given at conferences include:
 * [Rust for High-Level Developers](https://that.us/events/wi/2023/) at THAT Conference Wisconsin
 * [Rust for High-Level Developers](https://www.kcdc.info/) at KCDC
