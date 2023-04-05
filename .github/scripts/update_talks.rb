@@ -16,6 +16,8 @@ talks.first(5).each do |talk|
   watch_link = talk.at_css('a')[:href]
   talks_list << "* [#{presentation}](#{watch_link}) at #{conference}"
 end
+talks_list << "\n"
+
 
 # Update the README.md file
 client = Octokit::Client.new(access_token: ENV['GITHUB_TOKEN'])
