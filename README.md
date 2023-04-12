@@ -63,7 +63,13 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/RabbiGreenbe
   <img src="https://www.bengreenberg.dev/assets/images/ben_and_matz.jpeg" align="center" style="width: 100%" />
   <p>Meeting Matz, the creator of Ruby, at RubyConf</p>
 </div>
-
+	
+### Recent Open Source Projects
+	
+* [ChatGPT Gmail Chrome Extension](https://github.com/bencgreenberg/chatgpt-gmail-suggestions-chrome-extension)
+* [Bayesian Probability Calculator CLI](https://github.com/bencgreenberg/probability-cli)
+* [ChatGPT GitHub Action Markdown Discriminatory Language Check](https://github.com/bencgreenberg/github-action-gpt-language-check)
+* [StackExchange Questions to Tutorial Topic Generator](https://github.com/bencgreenberg/stackexchange-tutorial-themes)
 
 ### Recent Blog Posts
 
