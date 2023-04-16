@@ -71,14 +71,15 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/RabbiGreenbe
 * [ChatGPT GitHub Action Markdown Discriminatory Language Check](https://github.com/bencgreenberg/github-action-gpt-language-check)
 * [StackExchange Questions to Tutorial Topic Generator](https://github.com/bencgreenberg/stackexchange-tutorial-themes)
 
+
 ### Recent Blog Posts
 
 
+* [ChatGPT for Gmail: The Chrome Extension to Fine-Tune Your Emails](https://www.bengreenberg.dev/posts/2023-04-13-chatgpt-gmail-chrome-extension/)
+* [Use GitHub Actions to Make Your GitHub Profile Dynamic](https://www.bengreenberg.dev/posts/2023-04-09-github-profile-dynamic-content/)
 * [A ChatGPT GitHub Action for Reviewing Text for Potentially Discriminatory Language](https://www.bengreenberg.dev/posts/2023-04-04-github-action-gpt-language-check/)
 * [StackExchange Tutorial Themes: Using ChatGPT to Discover Relevant Topics](https://www.bengreenberg.dev/posts/2023-03-31-stackexchange-gpt-tutorial-themes/)
 * [Accelerating Substrate Blockchain Testing with GitHub Codespaces](https://www.bengreenberg.dev/posts/2023-03-15-accelerating-substrate-codespaces/)
-* [From High-Level to Systems Programming: A Practical Guide to Rust, Part 2](https://www.bengreenberg.dev/posts/2023-01-02-high-level-to-rust-part-2/)
-* [From High-Level to Systems Programming: A Practical Guide to Rust, Part 1](https://www.bengreenberg.dev/posts/2022-12-30-high-level-to-rust-part-1/)
 </td>
 </tr>
 </table>
