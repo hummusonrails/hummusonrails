@@ -66,7 +66,7 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/RabbiGreenbe
 	
 ### Recent Open Source Projects
 	
-* [Create ChatGPT App Rust CLI](https://github.com/bencgreenberg/create-chatgpt-app)
+* [Create ChatGPT App Rust CLI](https://github.com/hummusonrails/create-chatgpt-app)
 * [ChatGPT Gmail Chrome Extension](https://github.com/bencgreenberg/chatgpt-gmail-suggestions-chrome-extension)
 * [Bayesian Probability Calculator CLI](https://github.com/bencgreenberg/probability-cli)
 * [ChatGPT GitHub Action Markdown Discriminatory Language Check](https://github.com/bencgreenberg/github-action-gpt-language-check)
