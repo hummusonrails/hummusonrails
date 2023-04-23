@@ -44,9 +44,9 @@ Some recent talks I've given at conferences include:
 
 * [Rust for High-Level Developers](https://that.us/events/wi/2023/) at THAT Conference Wisconsin
 * [Rust for High-Level Developers](https://www.kcdc.info/) at KCDC
+* [From dApp to Parachain](https://dotprague.xyz/) at Polkadot Prague
 * [Rust for High-Level Developers](https://devoxx.gr/) at Devoxx Greece
 * [Becoming and Hiring Second Career Developers](https://www.codementor.io/events/second-career-developers-eqx6yh2c5s) at CodeMentor
-* [Build Your Own Synthetics Monitoring Workshop](https://talks.toorcon.net/toorcamp-2020-2019/talk/7RCSTX/) at ToorCamp
 
 I've also had a chance to chat with some great people on podcasts including:
 
