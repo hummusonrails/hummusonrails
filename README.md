@@ -78,14 +78,15 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/RabbiGreenbe
 
 
 
+
 ### Recent Blog Posts
 
 
+* [Unlocking GitHub Codespaces for Workshops](https://www.bengreenberg.dev/posts/2023-05-22-codespaces-for-workshops/)
 * [The Importance of Blockchain Knowledge for Devs](https://www.bengreenberg.dev/posts/2023-05-16-importance-of-blockchain-for-new-devs/)
 * [Get Verified on Bluesky Social With Your GoDaddy Domain](https://www.bengreenberg.dev/posts/2023-04-26-get-verified-on-bluesky-godaddy/)
 * [ChatGPT for Gmail: The Chrome Extension to Fine-Tune Your Emails](https://www.bengreenberg.dev/posts/2023-04-13-chatgpt-gmail-chrome-extension/)
 * [Use GitHub Actions to Make Your GitHub Profile Dynamic](https://www.bengreenberg.dev/posts/2023-04-09-github-profile-dynamic-content/)
-* [A ChatGPT GitHub Action for Reviewing Text for Potentially Discriminatory Language](https://www.bengreenberg.dev/posts/2023-04-04-github-action-gpt-language-check/)
 </td>
 </tr>
 </table>
