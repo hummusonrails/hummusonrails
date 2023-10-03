@@ -32,7 +32,7 @@
 <td style="border: none;" width="50%">
 <h3>It's so nice of you stop by! ☺️</h3>
 
-I work as a Senior Developer Relations Engineer 🥑 at [Parity](https://www.parity.io/) where I work with a globally distributed team dedicated to improving developer experience and building developer community.
+I am a Principal Consultant at [Yalla, DevRel LLC](https://wwww.yalladevrel.com) where I work to bring meaningful and measurable impact for clients seeking developer relations as a service. I have worked in lead roles in DevRel teams in companies such as Vonage, Orbit, New Relic and Parity Technologies.
 
 In my personal life, you can find me involved in some of these projects:
 
@@ -54,7 +54,7 @@ I've also had a chance to chat with some great people on podcasts including:
 * [Kongcast](https://www.youtube.com/watch?v=5TXiFoekXb8)
 * [Polyglot](https://podcasts.apple.com/us/podcast/polyglot/id1553516392)
 
-Interested in chatting? Let's talk on [Twitter](https://twitter.com/RabbiGreenberg)!
+Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrails)!
 
 </td>
 
@@ -67,10 +67,10 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/RabbiGreenbe
 ### Recent Open Source Projects
 	
 * [Create ChatGPT App Rust CLI](https://github.com/hummusonrails/create-chatgpt-app)
-* [ChatGPT Gmail Chrome Extension](https://github.com/bencgreenberg/chatgpt-gmail-suggestions-chrome-extension)
-* [Bayesian Probability Calculator CLI](https://github.com/bencgreenberg/probability-cli)
-* [ChatGPT GitHub Action Markdown Discriminatory Language Check](https://github.com/bencgreenberg/github-action-gpt-language-check)
-* [StackExchange Questions to Tutorial Topic Generator](https://github.com/bencgreenberg/stackexchange-tutorial-themes)
+* [ChatGPT Gmail Chrome Extension](https://github.com/hummusonrails/chatgpt-gmail-suggestions-chrome-extension)
+* [Bayesian Probability Calculator CLI](https://github.com/hummusonrails/probability-cli)
+* [ChatGPT GitHub Action Markdown Discriminatory Language Check](https://github.com/hummusonrails/github-action-gpt-language-check)
+* [StackExchange Questions to Tutorial Topic Generator](https://github.com/hummusonrails/stackexchange-tutorial-themes)
 
 
 
