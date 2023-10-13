@@ -32,7 +32,7 @@
 <td style="border: none;" width="50%">
 <h3>It's so nice of you stop by! ☺️</h3>
 
-I am a Principal Consultant at [Yalla, DevRel LLC](https://wwww.yalladevrel.com) where I work to bring meaningful and measurable impact for clients seeking developer relations as a service. I have worked in lead roles in DevRel teams in companies such as Vonage, Orbit, New Relic and Parity Technologies.
+I am the Head of DevRel at [Fuel](https://www.fuel.network/) and a Principal Consultant at [Yalla, DevRel LLC](https://wwww.yalladevrel.com). My work is dedicated to bridging the divide between developer-focused companies and the developers who build with them. I have worked in lead roles in DevRel teams in companies such as Vonage, Orbit, New Relic and Parity Technologies.
 
 In my personal life, you can find me involved in some of these projects:
 
