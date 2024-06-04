@@ -32,12 +32,13 @@
 <td style="border: none;" width="50%">
 <h3>It's so nice of you stop by! ☺️</h3>
 
-I am the Head of DevRel at [Fuel](https://www.fuel.network/) and a Principal Consultant at [Yalla, DevRel LLC](https://wwww.yalladevrel.com). My work is dedicated to bridging the divide between developer-focused companies and the developers who build with them. I have worked in lead roles in DevRel teams in companies such as Vonage, Orbit, New Relic and Parity Technologies.
+I am the Developer Advocate at [Couchbase](https://www.couchbase.com/) and a Principal Consultant at [Yalla, DevRel LLC](https://wwww.yalladevrel.com). My work is dedicated to bridging the divide between developer-focused companies and the developers who build with them. I have worked in lead roles in DevRel teams in companies such as Vonage, Orbit, New Relic and Parity Technologies.
 
 In my personal life, you can find me involved in some of these projects:
 
+* As a member of the board of [Ruby Central](https://rubycentral.org/), helping to support the Ruby community.
 * I am building [hirethePIVOT](https://hirethepivot.com), an open source reverse job board for career changers. 
-* Co-founded and co-organize the [israel.rb](https://www.facebook.com/groups/272757750683415) meetup community.
+* Co-founded and co-organized the [israel.rb](https://www.facebook.com/groups/272757750683415) meetup community.
 * Published the [Torah && Tech](https://torahandtech.dev) weekly newsletter and book.
 
 Some recent talks I've given at conferences include:
@@ -60,7 +61,7 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 
 <td style="border: none;" width="40%">
 <div align="center">
-  <img src="https://www.bengreenberg.dev/assets/images/ben_and_matz.jpeg" align="center" style="width: 100%" />
+  <img src="https://www.bengreenberg.dev/static/images/ben_and_matz.jpeg" style="width: 100%" />
   <p>Meeting Matz, the creator of Ruby, at RubyConf</p>
 </div>
 	
