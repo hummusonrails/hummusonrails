@@ -75,66 +75,11 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 * [StackExchange Questions to Tutorial Topic Generator](https://github.com/hummusonrails/stackexchange-tutorial-themes)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Recent Blog Posts
+
+* [Add Vector Search to your Site](https://www.bengreenberg.dev/blog/blog_add-vector-search-to-your-astro-blog_1716508800000)
+* [Integrating Couchbase to an Astro Site](https://www.bengreenberg.dev/blog/blog_launching-your-astro-powered-blog-on-a-journey-to-couchbase_1716076800000)
+* [Unlocking GitHub Codespaces for Workshops](https://www.bengreenberg.dev/blog/blog_1684713600000)
 
 
 </td>
