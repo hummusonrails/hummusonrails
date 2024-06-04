@@ -66,7 +66,8 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 </div>
 	
 ### Recent Open Source Projects
-	
+
+* [Astro blog integrated with Couchbase](https://github.com/hummusonrails/personal-site)
 * [Create ChatGPT App Rust CLI](https://github.com/hummusonrails/create-chatgpt-app)
 * [ChatGPT Gmail Chrome Extension](https://github.com/hummusonrails/chatgpt-gmail-suggestions-chrome-extension)
 * [Bayesian Probability Calculator CLI](https://github.com/hummusonrails/probability-cli)
