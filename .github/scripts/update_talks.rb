@@ -14,7 +14,7 @@ talks_list = ["Some recent talks I've given at conferences include:\n"]
 talks.first(5).each do |talk|
   presentation = talk.css('div.text-sm.font-medium.text-gray-900').text.strip
   conference = talk.css('td:nth-child(2) div.text-sm.text-gray-900').text.strip
-  watch_link = talk.css('td:nth-child(5) a')[:href]
+  watch_link = talk.css('td:nth-child(5) a').attr('href').value
   talks_list << "* [#{presentation}](#{watch_link}) at #{conference}"
 end
 talks_list << "\n"
