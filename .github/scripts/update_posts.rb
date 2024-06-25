@@ -1,6 +1,7 @@
 require 'httparty'
 require 'nokogiri'
 require 'octokit'
+require 'base64'
 
 # Scrape blog posts from the website
 url = "https://www.bengreenberg.dev/blog/"
