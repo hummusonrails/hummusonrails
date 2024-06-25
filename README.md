@@ -43,6 +43,11 @@ In my personal life, you can find me involved in some of these projects:
 
 Some recent talks I've given at conferences include:
 
+* [Rust for High-Level Developers](https://that.us/events/wi/2023/) at THAT Conference Wisconsin
+* [Rust for High-Level Developers](https://www.kcdc.info/) at KCDC
+* [From dApp to Parachain](https://youtu.be/NvBNFCTtYRw?si=fBPpSeud5MzyN_Vu) at Polkadot Prague
+* [Rust for High-Level Developers](https://youtu.be/avz_SQZMxCU) at Devoxx Greece
+* [Becoming and Hiring Second Career Developers](https://www.codementor.io/events/second-career-developers-eqx6yh2c5s) at CodeMentor
 
 I've also had a chance to chat with some great people on podcasts including:
 
