@@ -25,6 +25,8 @@ jobs:
           gem install httparty
           gem install nokogiri
           gem install octokit
+          gem install faraday-retry
+          gem install faraday-multipart
 
       - name: Scrape talks and update README
         run: ruby ./.github/scripts/update_talks.rb
