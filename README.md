@@ -67,7 +67,10 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 	
 ### Recent Open Source Projects
 
-* [Astro blog integrated with Couchbase](https://github.com/hummusonrails/personal-site)
+* [What's for Dinner AI Assistant](https://github.com/hummusonrails/whats-for-dinner-ai-assistant)
+* [Full Medium.com Clone with Rails and Couchbase](https://github.com/hummusonrails/realworld-couchbase-ruby-orm)
+* [Astro Blog Integrated with Couchbase](https://github.com/hummusonrails/personal-site)
+* [AI Powered Competitive Trivia with Twilio, OpenAI and Couchbase](https://github.com/hummusonrails/trivia-game)
 * [Create ChatGPT App Rust CLI](https://github.com/hummusonrails/create-chatgpt-app)
 * [ChatGPT Gmail Chrome Extension](https://github.com/hummusonrails/chatgpt-gmail-suggestions-chrome-extension)
 * [Bayesian Probability Calculator CLI](https://github.com/hummusonrails/probability-cli)
