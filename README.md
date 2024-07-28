@@ -85,14 +85,15 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 
 
 
+
 ### Recent Blog Posts
 
 
+* [What's New in Developer Trends in 2024](https://www.bengreenberg.dev/blog/blog_what's-new-in-developer-trends-in-2024_1721952000000)
 * [Rails Caching With Couchbase in Under 5 Minutes](https://www.bengreenberg.dev/blog/blog_rails-caching-with-couchbase-in-under-5-minutes_1719187200000)
 * [Twilio Challenge: SmartyCall - AI Powered Competitive Trivia](https://www.bengreenberg.dev/blog/blog_twilio-challenge:-smartycall---ai-powered-competitive-trivia_1718668800000)
 * [Add Vector Search to Your Astro Blog](https://www.bengreenberg.dev/blog/blog_add-vector-search-to-your-astro-blog_1716508800000)
 * [Launching Your Astro Powered Blog on a Journey to Couchbase](https://www.bengreenberg.dev/blog/blog_launching-your-astro-powered-blog-on-a-journey-to-couchbase_1716076800000)
-* [Decoding Polkadot](https://www.bengreenberg.dev/blog/blog_1685404800000)
 </td>
 </tr>
 </table>
