@@ -32,7 +32,7 @@
 <td style="border: none;" width="50%">
 <h3>It's so nice of you stop by! ☺️</h3>
 
-I am the Developer Advocate at [Couchbase](https://www.couchbase.com/) for Turkey, Israel, the Middle East and Africa (TIMEA) and a Principal Consultant at [Yalla, DevRel LLC](https://wwww.yalladevrel.com). My work is dedicated to bridging the divide between developer-focused companies and the developers who build with them. I have worked in lead roles in DevRel teams in companies such as Vonage, Orbit, New Relic and Parity Technologies.
+I am the Developer Advocate at [Couchbase](https://www.couchbase.com/) for EMEA and a Principal Consultant at [Yalla, DevRel LLC](https://wwww.yalladevrel.com). My work is dedicated to bridging the divide between developer-focused companies and the developers who build with them. I have worked in lead roles in DevRel teams in companies such as Vonage, Orbit, New Relic and Parity Technologies.
 
 In my personal life, you can find me involved in some of these projects:
 
