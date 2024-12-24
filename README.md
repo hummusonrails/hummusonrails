@@ -61,8 +61,7 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 
 <td style="border: none;" width="40%">
 <div align="center">
-  <img src="https://www.bengreenberg.dev/static/images/ben_and_matz.jpeg" style="width: 100%" />
-  <p>Meeting Matz, the creator of Ruby, at RubyConf</p>
+  <img src="https://www.bengreenberg.dev/static/images/ben.jpeg" style="width: 100%" />
 </div>
 	
 ### Recent Open Source Projects
