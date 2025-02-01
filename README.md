@@ -43,11 +43,11 @@ In my personal life, you can find me involved in some of these projects:
 
 Some recent talks I've given at conferences include:
 
-* [How to Decipher User Uncertainty with GenAI and Vector Search](https://youtu.be/MK1MymRdrvQ?si=-H0t69jl4so9tn4n) at hayaData
-* [Users Deserve Better How AI Can Deliver Better Search](https://youtu.be/wioS3dBvvF8?si=WnSut8emp913bCeE) at GenAI Summit
-* [Decoding Search: Keyword, Semantic and Vector](https://youtu.be/hS0wdmBn1UI?si=JBwBvqItgMNPQDUC) at Israel Tech Radar
-* [Rust for High-Level Developers](https://that.us/events/wi/2023/) at THAT Conference Wisconsin
-* [Rust for High-Level Developers](https://www.kcdc.info/) at KCDC
+* [](https://youtu.be/MK1MymRdrvQ?si=-H0t69jl4so9tn4n) at 
+* [](https://youtu.be/wioS3dBvvF8?si=WnSut8emp913bCeE) at 
+* [](https://youtu.be/hS0wdmBn1UI?si=JBwBvqItgMNPQDUC) at 
+* [](https://that.us/events/wi/2023/) at 
+* [](https://www.kcdc.info/) at 
 
 I've also had a chance to chat with some great people on podcasts including:
 
