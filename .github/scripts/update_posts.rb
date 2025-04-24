@@ -1,19 +1,18 @@
 require 'httparty'
-require 'nokogiri'
 require 'octokit'
 require 'base64'
+require 'json'
 
-# Scrape blog posts from the website
-url = "https://www.bengreenberg.dev/blog/"
+# Fetch blog posts from the API
+url = "https://www.bengreenberg.dev/api/posts.json"
 response = HTTParty.get(url)
-parsed_page = Nokogiri::HTML(response.body)
-posts = parsed_page.css('li.py-5')
+posts = JSON.parse(response.body)
 
 # Generate the updated blog posts list (top 5)
 posts_list = ["\n### Recent Blog Posts\n\n"]
 posts.first(5).each do |post|
-  title = post.css('h3.text-2xl.font-bold.leading-8.tracking-tight').text.strip
-  link = "https://www.bengreenberg.dev#{post.at_css('a')[:href]}"
+  title = post['title']
+  link = "https://www.bengreenberg.dev/blog/#{post['slug']}"
   posts_list << "* [#{title}](#{link})"
 end
 
@@ -24,7 +23,7 @@ readme = client.readme(repo)
 readme_content = Base64.decode64(readme[:content]).force_encoding('UTF-8')
 
 # Replace the existing blog posts section
-posts_regex = /### Recent Blog Posts\n\n[\s\S]*?(?=<\/td>)/m
+posts_regex = /### Recent Blog Posts\n\n[\s\S]*?(?=\n<\/td>|\n##|\z)/m
 updated_content = readme_content.sub(posts_regex, "#{posts_list.join("\n")}\n")
 
 client.update_contents(repo, 'README.md', 'Update recent blog posts', readme[:sha], updated_content)
