@@ -1,21 +1,20 @@
 require 'httparty'
-require 'nokogiri'
 require 'octokit'
 require 'base64'
+require 'json'
 
-# Scrape talks from the website
-url = "https://www.bengreenberg.dev/talks/"
+# Fetch talks from the API
+url = "https://www.bengreenberg.dev/api/talks.json"
 response = HTTParty.get(url)
-parsed_page = Nokogiri::HTML(response.body)
-talks = parsed_page.css('tbody tr')
+talks = JSON.parse(response.body)
 
 # Generate the updated talks list (top 5)
 talks_list = ["Some recent talks I've given at conferences include:\n"]
 talks.first(5).each do |talk|
-  presentation = talk.css('div.text-sm.font-medium.text-gray-900').text.strip
-  conference = talk.css('td:nth-child(2) div.text-sm.text-gray-900').text.strip
-  watch_link = talk.css('td:nth-child(5) a').attr('href').value
-  talks_list << "* [#{presentation}](#{watch_link}) at #{conference}"
+  title = talk['title']
+  conference = talk['conference']
+  link = talk['link']
+  talks_list << "* [#{title}](#{link}) at #{conference}"
 end
 talks_list << "\n"
 
