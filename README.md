@@ -124,14 +124,16 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 
 
 
+
 ### Recent Blog Posts
 
 
-* [](https://www.bengreenberg.dev/blog/docker-does-what-run-ai-models-locally-with-docker)
-* [](https://www.bengreenberg.dev/blog/what)
-* [](https://www.bengreenberg.dev/blog/rails-caching-with-couchbase-in-under-5-minutes)
-* [](https://www.bengreenberg.dev/blog/twilio-challenge-smartycall-ai-powered-competitive-trivia)
-* [](https://www.bengreenberg.dev/blog/add-vector-search-to-your-astro-blog)
+* [Docker Does What?!? Run AI Models Locally with Docker](https://www.bengreenberg.dev/blog/docker-does-what-run-ai-models-locally-with-docker)
+* [What's New in Developer Trends in 2024](https://www.bengreenberg.dev/blog/whats-new-in-developer-trends)
+* [Rails Caching With Couchbase in Under 5 Minutes](https://www.bengreenberg.dev/blog/rails-caching-with-couchbase-in-under-5-minutes)
+* [Twilio Challenge: SmartyCall - AI Powered Competitive Trivia](https://www.bengreenberg.dev/blog/twilio-challenge-smartycall-ai-powered-competitive-trivia)
+* [Add Vector Search to Your Astro Blog](https://www.bengreenberg.dev/blog/add-vector-search-to-your-astro-blog)
+
 </td>
 </tr>
 </table>
