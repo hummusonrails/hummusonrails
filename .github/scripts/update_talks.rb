@@ -11,7 +11,7 @@ talks = JSON.parse(response.body)
 # Generate the updated talks list (top 5)
 talks_list = ["Some recent talks I've given at conferences include:\n"]
 talks.first(5).each do |talk|
-  title = talk['title']
+  title = talk['presentation']
   conference = talk['conference']
   link = talk['link']
   talks_list << "* [#{title}](#{link}) at #{conference}"
