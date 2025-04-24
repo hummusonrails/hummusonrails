@@ -36,8 +36,9 @@ I am the Developer Advocate at [Couchbase](https://www.couchbase.com/) for EMEA 
 
 In my personal life, you can find me involved in some of these projects:
 
+* Writing a book on vector search for developers with [Pragmatic Programmrs](https://www.pragprog.com) to be published soon.
 * As a member of the board of [Ruby Central](https://rubycentral.org/), helping to support the Ruby community.
-* I am building [hirethePIVOT](https://hirethepivot.com), an open source reverse job board for career changers. 
+* I am building [sponsorsearchAI](https://sponsorsearchAI.com), a resource to help companies find the right developer events to sponsor. 
 * Co-founded and co-organized the [israel.rb](https://www.facebook.com/groups/272757750683415) meetup community.
 * Published the [Torah && Tech](https://torahandtech.dev) weekly newsletter and book.
 
@@ -66,6 +67,9 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 	
 ### Recent Open Source Projects
 
+* [Mario for Developer Events](https://github.com/hummusonrails/mario)
+* [Couchbase MCP Server](https://github.com/hummusonrails/couchbase-mcp-server)
+* [Open Source AI Agent with Search](https://github.com/hummusonrails/browser-use-agent-with-couchbase)
 * [What's for Dinner AI Assistant](https://github.com/hummusonrails/whats-for-dinner-ai-assistant)
 * [Full Medium.com Clone with Rails and Couchbase](https://github.com/hummusonrails/realworld-couchbase-ruby-orm)
 * [Astro Blog Integrated with Couchbase](https://github.com/hummusonrails/personal-site)
@@ -73,9 +77,6 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 * [Create ChatGPT App Rust CLI](https://github.com/hummusonrails/create-chatgpt-app)
 * [ChatGPT Gmail Chrome Extension](https://github.com/hummusonrails/chatgpt-gmail-suggestions-chrome-extension)
 * [Bayesian Probability Calculator CLI](https://github.com/hummusonrails/probability-cli)
-* [ChatGPT GitHub Action Markdown Discriminatory Language Check](https://github.com/hummusonrails/github-action-gpt-language-check)
-* [StackExchange Questions to Tutorial Topic Generator](https://github.com/hummusonrails/stackexchange-tutorial-themes)
-
 
 
 
