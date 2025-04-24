@@ -44,11 +44,11 @@ In my personal life, you can find me involved in some of these projects:
 
 Some recent talks I've given at conferences include:
 
-* [How to Decipher User Uncertainty with GenAI and Vector Search](https://youtu.be/MK1MymRdrvQ?si=-H0t69jl4so9tn4n) at hayaData
-* [Users Deserve Better How AI Can Deliver Better Search](https://youtu.be/wioS3dBvvF8?si=WnSut8emp913bCeE) at GenAI Summit
-* [Decoding Search: Keyword, Semantic and Vector](https://youtu.be/hS0wdmBn1UI?si=JBwBvqItgMNPQDUC) at Israel Tech Radar
-* [From dApp to Parachain](https://youtu.be/NvBNFCTtYRw?si=fBPpSeud5MzyN_Vu) at Polkadot Prague
-* [Rust for High-Level Developers](https://youtu.be/avz_SQZMxCU) at Devoxx Greece
+* [Vector Search for Decentralized Systems](https://ethcc.io) at ETHCC
+* [Mastering Reactive Patterns with Node.js](https://www.nodetlv.com/events/eventful-databases-mastering-reactive-patterns-with-node-js) at NodeTLV
+* [Smart Contracts without the Handcuffs](https://www.ethdam.com) at ETHDam
+* [Build Distributed Architecture with wasmCloud](https://2025.wasm.io/sessions/building-a-distributed-architecture-with-wasmcloud-hands-on-workshop/) at WASM I/O
+* [Vector Search for Decentralized Systems](https://www.youtube.com/watch?v=3eE6FruEJgs) at ETHDenver
 
 I've also had a chance to chat with some great people on podcasts including:
 
