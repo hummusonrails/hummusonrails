@@ -32,7 +32,7 @@
 <td style="border: none;" width="50%">
 <h3>It's so nice of you stop by! ☺️</h3>
 
-I am the Developer Advocate at [Couchbase](https://www.couchbase.com/) for EMEA and a Principal Consultant at [Yalla, DevRel LLC](https://wwww.yalladevrel.com). My work is dedicated to bridging the divide between developer-focused companies and the developers who build with them. I have worked in lead roles in DevRel teams in companies such as Vonage, Orbit, New Relic and Parity Technologies.
+I am a Developer Relations Engineer at [Arbitrum](https://www.arbitrum.foundation/) and a Principal Consultant at [Yalla, DevRel LLC](https://wwww.yalladevrel.com). My work bridges the divide between developer-focused companies and the developers who build with them. I have worked in lead roles in DevRel teams in companies such as Vonage, Orbit, New Relic, and Parity Technologies.
 
 In my personal life, you can find me involved in some of these projects:
 
@@ -50,7 +50,7 @@ Some recent talks I've given at conferences include:
 * [Build Distributed Architecture with wasmCloud](https://2025.wasm.io/sessions/building-a-distributed-architecture-with-wasmcloud-hands-on-workshop/) at WASM I/O
 * [Vector Search for Decentralized Systems](https://www.youtube.com/watch?v=3eE6FruEJgs) at ETHDenver
 
-I've also had a chance to chat with some great people on podcasts including:
+I've also had a chance to chat with some great people on podcasts, including:
 
 * [The Ruby on Rails Podcast](https://fireside.fm/episode/3OC19MC9+jwYA3Iyf)
 * [Kongcast](https://www.youtube.com/watch?v=5TXiFoekXb8)
