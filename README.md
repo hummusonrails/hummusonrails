@@ -36,7 +36,7 @@ I am a Developer Relations Engineer at [Arbitrum](https://www.arbitrum.foundatio
 
 In my personal life, you can find me involved in some of these projects:
 
-* Writing a book on vector search for developers with [Pragmatic Programmrs](https://www.pragprog.com) to be published soon.
+* Author of [Vector Search with JavaScript](https://pragprog.com/titles/bgvector/vector-search-with-javascript/) published by Pragmatic Bookshelf.
 * As a member of the board of [Ruby Central](https://rubycentral.org/), helping to support the Ruby community.
 * I am building [sponsorsearchAI](https://sponsorsearchAI.com), a resource to help companies find the right developer events to sponsor. 
 * Co-founded and co-organized the [israel.rb](https://www.facebook.com/groups/272757750683415) meetup community.
