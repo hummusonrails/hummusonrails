@@ -166,14 +166,15 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 
 
 
+
 ### Recent Blog Posts
 
 
-* [Docker Does What?!? Run AI Models Locally with Docker](https://www.bengreenberg.dev/blog/docker-does-what-run-ai-models-locally-with-docker)
-* [What's New in Developer Trends in 2024](https://www.bengreenberg.dev/blog/whats-new-in-developer-trends)
-* [Rails Caching With Couchbase in Under 5 Minutes](https://www.bengreenberg.dev/blog/rails-caching-with-couchbase-in-under-5-minutes)
-* [Twilio Challenge: SmartyCall - AI Powered Competitive Trivia](https://www.bengreenberg.dev/blog/twilio-challenge-smartycall-ai-powered-competitive-trivia)
-* [Add Vector Search to Your Astro Blog](https://www.bengreenberg.dev/blog/add-vector-search-to-your-astro-blog)
+* [I Built a Claude Skill That Scaffolds Arbitrum dApps. Here's How It Works.](https://www.bengreenberg.dev/blog/i-built-a-claude-skill-that-scaffolds-arbitrum-dapps-here-s-how-it-works)
+* [I built a Chrome extension that scores my X posts before I hit publish](https://www.bengreenberg.dev/blog/i-built-a-chrome-extension-that-scores-my-x-posts-before-i-hit-publish)
+* [The developer who doesn't code: what actually matters in 2026](https://www.bengreenberg.dev/blog/the-developer-who-doesn-t-code-what-actually-matters-in-2026)
+* [Why you can't handle disagreement anymore](https://www.bengreenberg.dev/blog/why-you-can-t-handle-disagreement-anymore)
+* [The hiring mistake that costs you your best candidates](https://www.bengreenberg.dev/blog/the-hiring-mistake-that-costs-you-your-best-candidates)
 
 </td>
 </tr>
