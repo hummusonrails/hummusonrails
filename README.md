@@ -168,14 +168,15 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 
 
 
+
 ### Recent Blog Posts
 
 
+* [How I am securing an OpenClaw hosting platform where customers hand over their API keys](https://www.bengreenberg.dev/blog/how-i-am-securing-an-openclaw-hosting-platform-where-customers-hand-over-their-api-keys)
+* [The Torah figured out AI agent liability 2,000 years ago](https://www.bengreenberg.dev/blog/the-torah-figured-out-ai-agent-liability-2-000-years-ago)
 * [I Built a Claude Skill That Scaffolds Arbitrum dApps. Here's How It Works.](https://www.bengreenberg.dev/blog/i-built-a-claude-skill-that-scaffolds-arbitrum-dapps-here-s-how-it-works)
 * [I built a Chrome extension that scores my X posts before I hit publish](https://www.bengreenberg.dev/blog/i-built-a-chrome-extension-that-scores-my-x-posts-before-i-hit-publish)
 * [The developer who doesn't code: what actually matters in 2026](https://www.bengreenberg.dev/blog/the-developer-who-doesn-t-code-what-actually-matters-in-2026)
-* [Why you can't handle disagreement anymore](https://www.bengreenberg.dev/blog/why-you-can-t-handle-disagreement-anymore)
-* [The hiring mistake that costs you your best candidates](https://www.bengreenberg.dev/blog/the-hiring-mistake-that-costs-you-your-best-candidates)
 
 </td>
 </tr>
