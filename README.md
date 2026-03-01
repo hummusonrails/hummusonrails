@@ -169,14 +169,15 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 
 
 
+
 ### Recent Blog Posts
 
 
+* [AI and Stylus: The Builder's New Toolkit](https://www.bengreenberg.dev/blog/ai-and-stylus-the-builders-new-toolkit)
+* [Is your project ready for Arbitrum Open House? A founder's self-assessment.](https://www.bengreenberg.dev/blog/is-your-project-ready-for-arbitrum-open-house-a-founder-s-self-assessment)
+* [What winning Arbitrum Open House teams do differently](https://www.bengreenberg.dev/blog/what-winning-arbitrum-open-house-teams-do-differently)
 * [How I am securing an OpenClaw hosting platform where customers hand over their API keys](https://www.bengreenberg.dev/blog/how-i-am-securing-an-openclaw-hosting-platform-where-customers-hand-over-their-api-keys)
 * [The Torah figured out AI agent liability 2,000 years ago](https://www.bengreenberg.dev/blog/the-torah-figured-out-ai-agent-liability-2-000-years-ago)
-* [I Built a Claude Skill That Scaffolds Arbitrum dApps. Here's How It Works.](https://www.bengreenberg.dev/blog/i-built-a-claude-skill-that-scaffolds-arbitrum-dapps-here-s-how-it-works)
-* [I built a Chrome extension that scores my X posts before I hit publish](https://www.bengreenberg.dev/blog/i-built-a-chrome-extension-that-scores-my-x-posts-before-i-hit-publish)
-* [The developer who doesn't code: what actually matters in 2026](https://www.bengreenberg.dev/blog/the-developer-who-doesn-t-code-what-actually-matters-in-2026)
 
 </td>
 </tr>
