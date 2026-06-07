@@ -183,14 +183,15 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 
 
 
+
 ### Recent Blog Posts
 
 
+* [Verifying what your AI provider actually ran](https://www.bengreenberg.dev/blog/verifying-what-your-ai-provider-actually-ran)
 * [Shipping x402 on AWS and Arbitrum](https://www.bengreenberg.dev/blog/shipping-x402-on-aws-and-arbitrum)
 * [Cloudflare just made x402 a compliance checkbox](https://www.bengreenberg.dev/blog/cloudflare-just-made-x402-a-compliance-checkbox)
 * [Your backend code is a black box. It doesn't have to be.](https://www.bengreenberg.dev/blog/your-backend-code-is-a-black-box-it-doesn-t-have-to-be)
 * [You're flying blind on Claude Code spending. I built a window.](https://www.bengreenberg.dev/blog/you-re-flying-blind-on-claude-code-spending-i-built-a-window)
-* [When the sirens stop, the data starts](https://www.bengreenberg.dev/blog/when-the-sirens-stop-the-data-starts)
 
 </td>
 </tr>
