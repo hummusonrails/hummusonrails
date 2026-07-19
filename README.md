@@ -189,14 +189,15 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 
 
 
+
 ### Recent Blog Posts
 
 
+* [From First-Run Drop-Off to First Useful Agent Run](https://www.bengreenberg.dev/blog/from-first-run-drop-off-to-first-useful-agent-run)
+* [The first Robinhood Chain app you should build is not another token](https://www.bengreenberg.dev/blog/the-first-robinhood-chain-app-you-should-build-is-not-another-token)
 * [This is why the smartphone failed in the early 1990s](https://www.bengreenberg.dev/blog/this-is-why-the-smartphone-failed-in-the-early-1990s)
 * [Your Solana code does not need a rewrite to reach Ethereum users](https://www.bengreenberg.dev/blog/your-solana-code-does-not-need-a-rewrite-to-reach-ethereum-users)
 * [Verifying what your AI provider actually ran](https://www.bengreenberg.dev/blog/verifying-what-your-ai-provider-actually-ran)
-* [Shipping x402 on AWS and Arbitrum](https://www.bengreenberg.dev/blog/shipping-x402-on-aws-and-arbitrum)
-* [Cloudflare just made x402 a compliance checkbox](https://www.bengreenberg.dev/blog/cloudflare-just-made-x402-a-compliance-checkbox)
 
 </td>
 </tr>
