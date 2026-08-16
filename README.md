@@ -193,14 +193,15 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 
 
 
+
 ### Recent Blog Posts
 
 
+* [What the new ArbOS will change for Arbitrum app developers](https://www.bengreenberg.dev/blog/what-the-new-arbos-will-change-for-arbitrum-app-developers)
+* [What would change if Arbitrum replaced its state tree](https://www.bengreenberg.dev/blog/what-would-change-if-arbitrum-replaced-its-state-tree)
+* [What a good Agents.md should teach an agent on day one](https://www.bengreenberg.dev/blog/what-a-good-agents-md-should-teach-an-agent-on-day-one)
 * [From First-Run Drop-Off to First Useful Agent Run](https://www.bengreenberg.dev/blog/from-first-run-drop-off-to-first-useful-agent-run)
 * [The first Robinhood Chain app you should build is not another token](https://www.bengreenberg.dev/blog/the-first-robinhood-chain-app-you-should-build-is-not-another-token)
-* [This is why the smartphone failed in the early 1990s](https://www.bengreenberg.dev/blog/this-is-why-the-smartphone-failed-in-the-early-1990s)
-* [Your Solana code does not need a rewrite to reach Ethereum users](https://www.bengreenberg.dev/blog/your-solana-code-does-not-need-a-rewrite-to-reach-ethereum-users)
-* [Verifying what your AI provider actually ran](https://www.bengreenberg.dev/blog/verifying-what-your-ai-provider-actually-ran)
 
 </td>
 </tr>
