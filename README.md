@@ -196,14 +196,15 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 
 
 
+
 ### Recent Blog Posts
 
 
+* [Vector Search Is Still the Memory Layer Agents Actually Need](https://www.bengreenberg.dev/blog/vector-search-is-still-the-memory-layer-agents-actually-need)
 * [What the new ArbOS will change for Arbitrum app developers](https://www.bengreenberg.dev/blog/what-the-new-arbos-will-change-for-arbitrum-app-developers)
 * [What would change if Arbitrum replaced its state tree](https://www.bengreenberg.dev/blog/what-would-change-if-arbitrum-replaced-its-state-tree)
 * [What a good Agents.md should teach an agent on day one](https://www.bengreenberg.dev/blog/what-a-good-agents-md-should-teach-an-agent-on-day-one)
 * [From First-Run Drop-Off to First Useful Agent Run](https://www.bengreenberg.dev/blog/from-first-run-drop-off-to-first-useful-agent-run)
-* [The first Robinhood Chain app you should build is not another token](https://www.bengreenberg.dev/blog/the-first-robinhood-chain-app-you-should-build-is-not-another-token)
 
 </td>
 </tr>
