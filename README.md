@@ -198,14 +198,15 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 
 
 
+
 ### Recent Blog Posts
 
 
+* [Where MCP Ends and A2A Begins: Building a Two-Agent Support Workflow Without Tool-Wrapping](https://www.bengreenberg.dev/blog/where-mcp-ends-and-a2a-begins-building-a-two-agent-support-workflow-without)
+* [The AI wrote the code. You still have to defend it.](https://www.bengreenberg.dev/blog/the-ai-wrote-the-code-you-still-have-to-defend-it)
+* [The 24kb Limit for Smart Contracts is Gone](https://www.bengreenberg.dev/blog/the-24kb-limit-for-smart-contracts-is-gone)
+* [Wiring a Reachy Mini into OpenClaw without trusting the robot](https://www.bengreenberg.dev/blog/wiring-a-reachy-mini-into-openclaw-without-trusting-the-robot)
 * [Vector Search Is Still the Memory Layer Agents Actually Need](https://www.bengreenberg.dev/blog/vector-search-is-still-the-memory-layer-agents-actually-need)
-* [What the new ArbOS will change for Arbitrum app developers](https://www.bengreenberg.dev/blog/what-the-new-arbos-will-change-for-arbitrum-app-developers)
-* [What would change if Arbitrum replaced its state tree](https://www.bengreenberg.dev/blog/what-would-change-if-arbitrum-replaced-its-state-tree)
-* [What a good Agents.md should teach an agent on day one](https://www.bengreenberg.dev/blog/what-a-good-agents-md-should-teach-an-agent-on-day-one)
-* [From First-Run Drop-Off to First Useful Agent Run](https://www.bengreenberg.dev/blog/from-first-run-drop-off-to-first-useful-agent-run)
 
 </td>
 </tr>
