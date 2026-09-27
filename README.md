@@ -199,14 +199,15 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 
 
 
+
 ### Recent Blog Posts
 
 
+* [Jev vs Claude: Who Wins?](https://www.bengreenberg.dev/blog/jev-vs-claude-who-wins)
+* [Your agent has a wallet. It still can't buy anything.](https://www.bengreenberg.dev/blog/your-agent-has-a-wallet-it-still-can-t-buy-anything)
+* [The Redirect Is Part of the Threat Model: Hardening MCP Client Connections](https://www.bengreenberg.dev/blog/the-redirect-is-part-of-the-threat-model-hardening-mcp-client-connections)
 * [Where MCP Ends and A2A Begins: Building a Two-Agent Support Workflow Without Tool-Wrapping](https://www.bengreenberg.dev/blog/where-mcp-ends-and-a2a-begins-building-a-two-agent-support-workflow-without)
 * [The AI wrote the code. You still have to defend it.](https://www.bengreenberg.dev/blog/the-ai-wrote-the-code-you-still-have-to-defend-it)
-* [The 24kb Limit for Smart Contracts is Gone](https://www.bengreenberg.dev/blog/the-24kb-limit-for-smart-contracts-is-gone)
-* [Wiring a Reachy Mini into OpenClaw without trusting the robot](https://www.bengreenberg.dev/blog/wiring-a-reachy-mini-into-openclaw-without-trusting-the-robot)
-* [Vector Search Is Still the Memory Layer Agents Actually Need](https://www.bengreenberg.dev/blog/vector-search-is-still-the-memory-layer-agents-actually-need)
 
 </td>
 </tr>
