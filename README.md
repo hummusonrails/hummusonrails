@@ -201,14 +201,15 @@ Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrail
 
 
 
+
 ### Recent Blog Posts
 
 
+* [What stateless MCP changes for gateways](https://www.bengreenberg.dev/blog/what-stateless-mcp-changes-for-gateways)
+* [I stopped letting AI write under my name](https://www.bengreenberg.dev/blog/i-stopped-letting-ai-write-under-my-name)
+* [Founders spend their feedback slot on the wrong thing](https://www.bengreenberg.dev/blog/founders-spend-their-feedback-slot-on-the-wrong-thing)
 * [Is Structured Human Input the Missing Link in Agentic Work?](https://www.bengreenberg.dev/blog/is-structured-human-input-the-missing-link-in-agentic-work)
 * [Jev vs Claude: Who Wins?](https://www.bengreenberg.dev/blog/jev-vs-claude-who-wins)
-* [Your agent has a wallet. It still can't buy anything.](https://www.bengreenberg.dev/blog/your-agent-has-a-wallet-it-still-can-t-buy-anything)
-* [The Redirect Is Part of the Threat Model: Hardening MCP Client Connections](https://www.bengreenberg.dev/blog/the-redirect-is-part-of-the-threat-model-hardening-mcp-client-connections)
-* [Where MCP Ends and A2A Begins: Building a Two-Agent Support Workflow Without Tool-Wrapping](https://www.bengreenberg.dev/blog/where-mcp-ends-and-a2a-begins-building-a-two-agent-support-workflow-without)
 
 </td>
 </tr>
