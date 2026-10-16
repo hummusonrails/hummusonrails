@@ -1,216 +1,31 @@
-# [![ben greenberg header](./new_header.png)](https://www.bengreenberg.dev)
-
-<div align="center">
-<a href="https://twitter.com/hummusonrails" target="_blank">
-  <img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 2px;" />
-</a>
-<a href="https://dev.to/bengreenberg" target="_blank">
-  <img src=https://img.shields.io/badge/dev.to-%2308090A.svg?&style=for-the-badge&logo=dev.to&logoColor=white alt=devto style="margin-bottom: 2px;" />
-</a>
-<a href=https://www.getrevue.co/profile/hummusonrails" target="_blank">
-	<img src="https://img.shields.io/badge/revue%20-%239146FF.svg?&style=for-the-badge&logo=Revue&logoColor=white" alt="reddit" style="margin-bottom: 2px;" />
-</a> 
-<a href="https://linkedin.com/in/hummusonrails" target="_blank">
-  <img src=https://img.shields.io/badge/linkedin-%231E77B2.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 2px;" />
-</a>
-<a href="https://www.youtube.com/channel/UC3Ug3f0ZZEBl8RQoFI6YNNQ" target="_blank">
-  <img src=https://img.shields.io/badge/youtube-%23EE4831.svg?&style=for-the-badge&logo=youtube&logoColor=white alt=youtube style="margin-bottom: 2px;" />
-</a>  
-<a href="https://www.twitch.tv/hummusonrails" target="_blank">
-	<img src="https://img.shields.io/badge/twitch%20-%239146FF.svg?&style=for-the-badge&logo=Twitch&logoColor=white" alt="twitch" style="margin-bottom: 2px;" />
-</a>  
-<a href=https://www.reddit.com/r/hummusonrails/" target="_blank">
-	<img src="https://img.shields.io/badge/reddit%20-%239146FF.svg?&style=for-the-badge&logo=Reddit&logoColor=white" alt="reddit" style="margin-bottom: 2px;" />
-</a>
-<a rel="me" href="https://fosstodon.org/@hummusonrails">
-	<img src="https://img.shields.io/badge/mastodon-%231E77B2.svg?&style=for-the-badge&logo=Mastodon&logoColor=white" alt="mastodon" style="margin-bottom: 2px;" />
-</a>	
-</div>
-
-<table style="border: none;">
-<tr style="border: none;">
-<td style="border: none;" width="50%">
-<h3>It's so nice of you stop by! ☺️</h3>
-
-I am a Developer Relations Engineer at [Arbitrum](https://www.arbitrum.foundation/) and a Principal Consultant at [Yalla, DevRel LLC](https://wwww.yalladevrel.com). My work bridges the divide between developer-focused companies and the developers who build with them. I have worked in lead roles in DevRel teams in companies such as Vonage, Orbit, New Relic, and Parity Technologies.
-
-In my personal life, you can find me involved in some of these projects:
-
-* Author of [Vector Search with JavaScript](https://pragprog.com/titles/bgvector/vector-search-with-javascript/) published by Pragmatic Bookshelf.
-* As a member of the board of [Ruby Central](https://rubycentral.org/), helping to support the Ruby community.
-* I am building [sponsorsearchAI](https://sponsorsearchAI.com), a resource to help companies find the right developer events to sponsor. 
-* Co-founded and co-organized the [israel.rb](https://www.facebook.com/groups/272757750683415) meetup community.
-* Published the [Torah && Tech](https://torahandtech.dev) weekly newsletter and book.
-
-Some recent talks I've given at conferences include:
-
-* [Vector Search for Decentralized Systems](https://ethcc.io) at ETHCC
-* [Mastering Reactive Patterns with Node.js](https://www.nodetlv.com/events/eventful-databases-mastering-reactive-patterns-with-node-js) at NodeTLV
-* [Smart Contracts without the Handcuffs](https://www.ethdam.com) at ETHDam
-* [Build Distributed Architecture with wasmCloud](https://2025.wasm.io/sessions/building-a-distributed-architecture-with-wasmcloud-hands-on-workshop/) at WASM I/O
-* [Vector Search for Decentralized Systems](https://www.youtube.com/watch?v=3eE6FruEJgs) at ETHDenver
-
-I've also had a chance to chat with some great people on podcasts, including:
-
-* [The Ruby on Rails Podcast](https://fireside.fm/episode/3OC19MC9+jwYA3Iyf)
-* [Kongcast](https://www.youtube.com/watch?v=5TXiFoekXb8)
-* [Polyglot](https://podcasts.apple.com/us/podcast/polyglot/id1553516392)
-
-Interested in chatting? Let's talk on [Twitter](https://twitter.com/hummusonrails)!
-
-</td>
-
-<td style="border: none;" width="40%">
-<div align="center">
-  <img src="https://www.bengreenberg.dev/static/images/ben.jpeg" style="width: 100%" />
-</div>
-	
-### Recent Open Source Projects
-
-* [Mario for Developer Events](https://github.com/hummusonrails/mario)
-* [Couchbase MCP Server](https://github.com/hummusonrails/couchbase-mcp-server)
-* [Open Source AI Agent with Search](https://github.com/hummusonrails/browser-use-agent-with-couchbase)
-* [What's for Dinner AI Assistant](https://github.com/hummusonrails/whats-for-dinner-ai-assistant)
-* [Full Medium.com Clone with Rails and Couchbase](https://github.com/hummusonrails/realworld-couchbase-ruby-orm)
-* [Astro Blog Integrated with Couchbase](https://github.com/hummusonrails/personal-site)
-* [AI Powered Competitive Trivia with Twilio, OpenAI and Couchbase](https://github.com/hummusonrails/trivia-game)
-* [Create ChatGPT App Rust CLI](https://github.com/hummusonrails/create-chatgpt-app)
-* [ChatGPT Gmail Chrome Extension](https://github.com/hummusonrails/chatgpt-gmail-suggestions-chrome-extension)
-* [Bayesian Probability Calculator CLI](https://github.com/hummusonrails/probability-cli)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Recent Blog Posts
-
-
-* [What stateless MCP changes for gateways](https://www.bengreenberg.dev/blog/what-stateless-mcp-changes-for-gateways)
-* [I stopped letting AI write under my name](https://www.bengreenberg.dev/blog/i-stopped-letting-ai-write-under-my-name)
-* [Founders spend their feedback slot on the wrong thing](https://www.bengreenberg.dev/blog/founders-spend-their-feedback-slot-on-the-wrong-thing)
-* [Is Structured Human Input the Missing Link in Agentic Work?](https://www.bengreenberg.dev/blog/is-structured-human-input-the-missing-link-in-agentic-work)
-* [Jev vs Claude: Who Wins?](https://www.bengreenberg.dev/blog/jev-vs-claude-who-wins)
-
-</td>
-</tr>
-</table>
+<!-- Generated by .github/scripts/build_profile.py. Edit the script, not this file. -->
+
+<a href="https://www.bengreenberg.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=08cea06b"><img src="assets/hero-light.svg?v=08cea06b" alt="Ben Greenberg. DevRel and technical GTM leader: building teams, driving product adoption." width="100%"></picture></a>
+
+I lead developer relations at [Arbitrum](https://arbitrum.io). I wrote [*Vector Search with JavaScript*](https://pragprog.com/titles/bgvector/vector-search-with-javascript/) for The Pragmatic Bookshelf, and I spent a decade in adult education and community organizing that I bring with me to my work in building developer communities.
+
+<p>
+<a href="https://arbitrum.io"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-1-dark.svg?v=45bbdf0a"><img src="assets/tile-1-light.svg?v=45bbdf0a" alt="DevRel at Arbitrum. Getting more developers from first code to production on Arbitrum." width="32.6%"></picture></a>
+<a href="https://pragprog.com/titles/bgvector/vector-search-with-javascript/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-2-dark.svg?v=f47e664e"><img src="assets/tile-2-light.svg?v=f47e664e" alt="Vector Search with JavaScript. Pragmatic Bookshelf." width="32.6%"></picture></a>
+<a href="https://codeplusconduct.substack.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-3-dark.svg?v=fddcca69"><img src="assets/tile-3-light.svg?v=fddcca69" alt="Code and Conduct. Technology, ethics, and the people between them." width="32.6%"></picture></a>
+</p>
+
+<p>
+<a href="https://www.bengreenberg.dev/blog"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/writing-dark.svg?v=a7803780"><img src="assets/writing-light.svg?v=a7803780" alt="Latest writing: Jev answers in half a second. I still moved my private decisions to a local model.; What stateless MCP changes for gateways; I stopped letting AI write under my name" width="49.4%"></picture></a>
+<a href="https://www.youtube.com/watch?v=MTneaLpwQug"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/video-dark.svg?v=189c321e"><img src="assets/video-light.svg?v=189c321e" alt="Latest video: How to Check an A2A Agent Does What Its Card Says" width="49.4%"></picture></a>
+</p>
+
+## Building lately
+
+<p>
+<a href="https://github.com/hummusonrails/arbitrum-stylus-multi-contract-example"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-1-dark.svg?v=354a0c38"><img src="assets/repo-1-light.svg?v=354a0c38" alt="arbitrum-stylus-multi-contract-example: Multi-contract workspace example with Arbitrum Stylus" width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/x402-facilitator"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-2-dark.svg?v=f6acb61a"><img src="assets/repo-2-light.svg?v=f6acb61a" alt="x402-facilitator: A complete x402 facilitator implementation for Arbitrum" width="49.4%"></picture></a>
+</p>
+<p>
+<a href="https://github.com/hummusonrails/arbitrum-mpp-example"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-3-dark.svg?v=ee399d03"><img src="assets/repo-3-light.svg?v=ee399d03" alt="arbitrum-mpp-example: Self-contained MPP payments on Arbitrum with Solidity, EIP-3009, and Permit2" width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/agents-that-pay"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-4-dark.svg?v=84c41990"><img src="assets/repo-4-light.svg?v=84c41990" alt="agents-that-pay: A trading agent that pays to screen its counterparty via KYB, and refuses to fill if that counterparty fails. Nevermined x402 + Baselayer + BrainTrust." width="49.4%"></picture></a>
+</p>
+
+<p align="center">
+<a href="https://www.bengreenberg.dev">bengreenberg.dev</a> &nbsp;·&nbsp; <a href="https://x.com/hummusonrails">X</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/hummusonrails/">LinkedIn</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/@HummusOnRails">YouTube</a> &nbsp;·&nbsp; <a href="https://codeplusconduct.substack.com">Substack</a>
+</p>
