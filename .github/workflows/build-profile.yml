@@ -26,10 +26,19 @@ jobs:
 
       - uses: astral-sh/setup-uv@v6
 
+      # Exit 3 means a source failed and its card kept the last good data:
+      # commit what did refresh, then fail the run so the breakage is seen.
       - name: Build README and cards
-        run: uv run .github/scripts/build_profile.py
+        id: build
+        run: |
+          set +e
+          uv run .github/scripts/build_profile.py
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          [ "$code" -eq 0 ] || [ "$code" -eq 3 ]
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
 
       - name: Commit changes
         run: |
@@ -39,3 +48,9 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "Refresh profile cards"
           git push
+
+      - name: Fail on stale sources
+        if: steps.build.outputs.code == '3'
+        run: |
+          echo "::error::A data source failed; see the build step log for which card kept old data."
+          exit 1

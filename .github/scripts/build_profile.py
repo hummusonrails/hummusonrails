@@ -9,10 +9,11 @@ SVG in assets/. Text is shaped with HarfBuzz and drawn as outlines, so the
 cards look the same everywhere without loading a web font.
 
 Live data comes from three public sources: the blog RSS feed, the YouTube
-channel feed, and the public repo list. If a source fails, the last good
-data in assets/state.json is reused so a hiccup never blanks a card.
+Data API, and the public repo list. If a source fails, the last good data
+in assets/state.json is reused so a hiccup never blanks a card, and the
+script exits 3 after building so the workflow run goes red.
 
-Run locally:  uv run .github/scripts/build_profile.py
+Run locally:  YOUTUBE_API_KEY=... uv run .github/scripts/build_profile.py
 """
 from __future__ import annotations
 
@@ -21,7 +22,6 @@ import email.utils
 import hashlib
 import json
 import os
-import re
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime
@@ -294,37 +294,25 @@ def fetch_posts() -> list[dict]:
     return posts[:6]
 
 
-class _NoRedirect(urllib.request.HTTPRedirectHandler):
-    def redirect_request(self, *a, **k):
-        return None
-
-
-def is_regular_video(vid: str) -> bool:
-    """Shorts answer 200 at /shorts/ID; regular videos redirect to /watch.
-    Anything else (a consent page, an error) counts as not proven regular."""
-    opener = urllib.request.build_opener(_NoRedirect)
-    req = urllib.request.Request(f"https://www.youtube.com/shorts/{vid}", headers={"User-Agent": UA})
-    try:
-        opener.open(req, timeout=10)
-        return False
-    except urllib.error.HTTPError as e:
-        return e.code in (301, 302, 303, 307) and "/watch" in (e.headers.get("Location") or "")
-    except Exception:
-        return False
-
-
 def fetch_video() -> dict:
-    ns = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
-    root = ET.fromstring(get(f"https://www.youtube.com/feeds/videos.xml?channel_id={YT_CHANNEL}"))
-    for entry in root.findall("a:entry", ns):
-        vid = entry.findtext("yt:videoId", namespaces=ns)
-        if not is_regular_video(vid):
-            continue
-        thumb = base64.b64encode(get(f"https://i.ytimg.com/vi/{vid}/mqdefault.jpg")).decode()
-        return dict(id=vid, title=entry.findtext("a:title", namespaces=ns).strip(),
-                    date=entry.findtext("a:published", namespaces=ns)[:10],
-                    url=f"https://www.youtube.com/watch?v={vid}", thumb=thumb)
-    raise ValueError("no regular video found")
+    """YouTube retired the channel RSS feeds (404 since October 2026) and puts
+    a captcha in front of scraped pages, so this reads the Data API. The UULF
+    playlist is the channel's long-form uploads: Shorts and private API
+    uploads are already left out."""
+    key = os.environ.get("YOUTUBE_API_KEY")
+    if not key:
+        raise ValueError("YOUTUBE_API_KEY is not set")
+    playlist = "UULF" + YT_CHANNEL[2:]
+    data = json.loads(get("https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails"
+                          f"&maxResults=1&playlistId={playlist}&key={key}"))
+    if not data.get("items"):
+        raise ValueError("no regular video found")
+    item = data["items"][0]
+    vid = item["contentDetails"]["videoId"]
+    thumb = base64.b64encode(get(f"https://i.ytimg.com/vi/{vid}/mqdefault.jpg")).decode()
+    return dict(id=vid, title=item["snippet"]["title"].strip(),
+                date=item["contentDetails"]["videoPublishedAt"][:10],
+                url=f"https://www.youtube.com/watch?v={vid}", thumb=thumb)
 
 
 def fetch_repos() -> list[dict]:
@@ -402,11 +390,13 @@ I lead developer relations at [Arbitrum](https://arbitrum.io). I wrote [*Vector 
 
 def main() -> None:
     state = json.loads(STATE.read_text()) if STATE.exists() else {}
+    stale = []
     for key, fetch in (("posts", fetch_posts), ("video", fetch_video), ("repos", fetch_repos)):
         try:
             state[key] = fetch()
         except Exception as e:  # keep the last good data rather than blanking a card
             print(f"{key}: kept previous data ({e})")
+            stale.append(key)
             if key not in state:
                 raise SystemExit(f"{key}: no data and no previous state")
     STATE.write_text(json.dumps(state, indent=1) + "\n")
@@ -429,6 +419,8 @@ def main() -> None:
         versions[name] = hashlib.sha1("".join(modes.values()).encode()).hexdigest()[:8]
     (ROOT / "README.md").write_text(readme(state["posts"], state["video"], state["repos"], versions))
     print("built", len(files) * 2, "cards")
+    if stale:
+        raise SystemExit(3)
 
 
 if __name__ == "__main__":
