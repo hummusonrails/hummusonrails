@@ -1,6 +1,11 @@
 {
  "posts": [
   {
+   "title": "Your MCP Debug Log Should Not Become a Credential Store",
+   "url": "https://bengreenberg.dev/blog/your-mcp-debug-log-should-not-become-a-credential-store/",
+   "date": "2026-10-15"
+  },
+  {
    "title": "Jev answers in half a second. I still moved my private decisions to a local model.",
    "url": "https://bengreenberg.dev/blog/jev-answers-in-half-a-second-i-still-moved-my-private-decisions-to-a-local-model/",
    "date": "2026-10-06"
@@ -24,11 +29,6 @@
    "title": "Is Structured Human Input the Missing Link in Agentic Work?",
    "url": "https://bengreenberg.dev/blog/is-structured-human-input-the-missing-link-in-agentic-work/",
    "date": "2026-09-24"
-  },
-  {
-   "title": "Jev vs Claude: Who Wins?",
-   "url": "https://bengreenberg.dev/blog/jev-vs-claude-who-wins/",
-   "date": "2026-09-18"
   }
  ],
  "video": {
@@ -43,7 +43,7 @@
    "name": "arbitrum-stylus-multi-contract-example",
    "description": "Multi-contract workspace example with Arbitrum Stylus",
    "language": "TypeScript",
-   "pushed_at": "2026-10-12T18:39:38Z",
+   "pushed_at": "2026-10-19T09:19:06Z",
    "html_url": "https://github.com/hummusonrails/arbitrum-stylus-multi-contract-example"
   },
   {

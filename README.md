@@ -11,14 +11,14 @@ I lead developer relations at [Arbitrum](https://arbitrum.io). I wrote [*Vector 
 </p>
 
 <p>
-<a href="https://www.bengreenberg.dev/blog"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/writing-dark.svg?v=a7803780"><img src="assets/writing-light.svg?v=a7803780" alt="Latest writing: Jev answers in half a second. I still moved my private decisions to a local model.; What stateless MCP changes for gateways; I stopped letting AI write under my name" width="49.4%"></picture></a>
+<a href="https://www.bengreenberg.dev/blog"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/writing-dark.svg?v=e57ccfb1"><img src="assets/writing-light.svg?v=e57ccfb1" alt="Latest writing: Your MCP Debug Log Should Not Become a Credential Store; Jev answers in half a second. I still moved my private decisions to a local model.; What stateless MCP changes for gateways" width="49.4%"></picture></a>
 <a href="https://www.youtube.com/watch?v=MTneaLpwQug"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/video-dark.svg?v=189c321e"><img src="assets/video-light.svg?v=189c321e" alt="Latest video: How to Check an A2A Agent Does What Its Card Says" width="49.4%"></picture></a>
 </p>
 
 ## Building lately
 
 <p>
-<a href="https://github.com/hummusonrails/arbitrum-stylus-multi-contract-example"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-1-dark.svg?v=354a0c38"><img src="assets/repo-1-light.svg?v=354a0c38" alt="arbitrum-stylus-multi-contract-example: Multi-contract workspace example with Arbitrum Stylus" width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/arbitrum-stylus-multi-contract-example"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-1-dark.svg?v=72bd0a0b"><img src="assets/repo-1-light.svg?v=72bd0a0b" alt="arbitrum-stylus-multi-contract-example: Multi-contract workspace example with Arbitrum Stylus" width="49.4%"></picture></a>
 <a href="https://github.com/hummusonrails/x402-facilitator"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-2-dark.svg?v=f6acb61a"><img src="assets/repo-2-light.svg?v=f6acb61a" alt="x402-facilitator: A complete x402 facilitator implementation for Arbitrum" width="49.4%"></picture></a>
 </p>
 <p>
