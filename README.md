@@ -27,5 +27,5 @@ I lead developer relations at [Arbitrum](https://arbitrum.io). I wrote [*Vector 
 </p>
 
 <p align="center">
-<a href="https://www.bengreenberg.dev">bengreenberg.dev</a> &nbsp;·&nbsp; <a href="https://x.com/hummusonrails">X</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/hummusonrails/">LinkedIn</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/@HummusOnRails">YouTube</a> &nbsp;·&nbsp; <a href="https://codeplusconduct.substack.com">Substack</a>
+<a href="https://www.bengreenberg.dev"><img src="https://www.bengreenberg.dev/api/gh/view.gif" width="0" height="0" alt=""><img src="https://www.bengreenberg.dev/api/gh/viewer.gif" width="0" height="0" alt="">bengreenberg.dev</a> &nbsp;·&nbsp; <a href="https://x.com/hummusonrails">X</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/hummusonrails/">LinkedIn</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/@HummusOnRails">YouTube</a> &nbsp;·&nbsp; <a href="https://codeplusconduct.substack.com">Substack</a>
 </p>
