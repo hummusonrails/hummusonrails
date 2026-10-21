@@ -343,6 +343,12 @@ def picture(name: str, alt: str, width: str, href: str, version: str = "") -> st
             f'<img src="assets/{name}-light.svg{q}" alt="{escape(alt)}" width="{width}"></picture></a>')
 
 
+# Two invisible images that count profile views on bengreenberg.dev: one is
+# fetched on every view, the other once per browser per day. Inside an
+# existing link so GitHub does not wrap them in a link of their own.
+PIXELS = "".join(f'<img src="{SITE}/api/gh/{k}.gif" width="0" height="0" alt="">' for k in ("view", "viewer"))
+
+
 def readme(posts: list[dict], video: dict, repos: list[dict], versions: dict) -> str:
     tile_alts = [f'{x["title"]}. {x["sub"]}' for x in TILES]
     tiles_row = "\n".join(picture(f"tile-{i + 1}", tile_alts[i], "32.6%", x["href"], versions[f"tile-{i + 1}"])
@@ -381,7 +387,7 @@ I lead developer relations at [Arbitrum](https://arbitrum.io). I wrote [*Vector 
 </p>
 
 <p align="center">
-<a href="{SITE}">bengreenberg.dev</a> &nbsp;·&nbsp; <a href="https://x.com/{USER}">X</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/{USER}/">LinkedIn</a> &nbsp;·&nbsp; <a href="{YT_URL}">YouTube</a> &nbsp;·&nbsp; <a href="https://codeplusconduct.substack.com">Substack</a>
+<a href="{SITE}">{PIXELS}bengreenberg.dev</a> &nbsp;·&nbsp; <a href="https://x.com/{USER}">X</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/{USER}/">LinkedIn</a> &nbsp;·&nbsp; <a href="{YT_URL}">YouTube</a> &nbsp;·&nbsp; <a href="https://codeplusconduct.substack.com">Substack</a>
 </p>
 """
 
