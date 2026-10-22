@@ -11,18 +11,18 @@ I lead developer relations at [Arbitrum](https://arbitrum.io). I wrote [*Vector 
 </p>
 
 <p>
-<a href="https://www.bengreenberg.dev/blog?ref=github-profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/writing-dark.svg?v=e70de734"><img src="assets/writing-light.svg?v=e70de734" alt="Latest writing: Your MCP Debug Log Should Not Become a Credential Store; Jev answers in half a second. I still moved my private decisions to a local model.; What stateless MCP changes for gateways" width="49.4%"></picture></a>
-<a href="https://www.youtube.com/watch?v=oKWNb4Wce44"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/video-dark.svg?v=becc9dc2"><img src="assets/video-light.svg?v=becc9dc2" alt="Latest video: Building with USDG on Arbitrum" width="49.4%"></picture></a>
+<a href="https://www.bengreenberg.dev/blog?ref=github-profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/writing-dark.svg?v=e57ccfb1"><img src="assets/writing-light.svg?v=e57ccfb1" alt="Latest writing: Your MCP Debug Log Should Not Become a Credential Store; Jev answers in half a second. I still moved my private decisions to a local model.; What stateless MCP changes for gateways" width="49.4%"></picture></a>
+<a href="https://www.youtube.com/watch?v=0o8SBjQmy5o"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/video-dark.svg?v=519469a7"><img src="assets/video-light.svg?v=519469a7" alt="Latest video: USDG on GMX, Morpho, Fluid, and Uniswap v4" width="49.4%"></picture></a>
 </p>
 
 ## Building lately
 
 <p>
-<a href="https://github.com/hummusonrails/arbitrum-usdg-examples"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-1-dark.svg?v=b27e7b06"><img src="assets/repo-1-light.svg?v=b27e7b06" alt="arbitrum-usdg-examples: Runnable examples for building with USDG, the Global Dollar issued by Paxos, on Arbitrum One." width="49.4%"></picture></a>
-<a href="https://github.com/hummusonrails/arbitrum-stylus-multi-contract-example"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-2-dark.svg?v=72bd0a0b"><img src="assets/repo-2-light.svg?v=72bd0a0b" alt="arbitrum-stylus-multi-contract-example: Multi-contract workspace example with Arbitrum Stylus" width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/x402-facilitator"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-1-dark.svg?v=c1ed9826"><img src="assets/repo-1-light.svg?v=c1ed9826" alt="x402-facilitator: A complete x402 facilitator implementation for Arbitrum" width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/arbitrum-usdg-examples"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-2-dark.svg?v=4548f830"><img src="assets/repo-2-light.svg?v=4548f830" alt="arbitrum-usdg-examples: Runnable examples for building with USDG, the Global Dollar issued by Paxos, on Arbitrum One." width="49.4%"></picture></a>
 </p>
 <p>
-<a href="https://github.com/hummusonrails/x402-facilitator"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-3-dark.svg?v=f6acb61a"><img src="assets/repo-3-light.svg?v=f6acb61a" alt="x402-facilitator: A complete x402 facilitator implementation for Arbitrum" width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/arbitrum-stylus-multi-contract-example"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-3-dark.svg?v=72bd0a0b"><img src="assets/repo-3-light.svg?v=72bd0a0b" alt="arbitrum-stylus-multi-contract-example: Multi-contract workspace example with Arbitrum Stylus" width="49.4%"></picture></a>
 <a href="https://github.com/hummusonrails/arbitrum-mpp-example"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-4-dark.svg?v=ee399d03"><img src="assets/repo-4-light.svg?v=ee399d03" alt="arbitrum-mpp-example: Self-contained MPP payments on Arbitrum with Solidity, EIP-3009, and Permit2" width="49.4%"></picture></a>
 </p>
 
