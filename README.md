@@ -12,7 +12,7 @@ I lead developer relations at [Arbitrum](https://arbitrum.io). I wrote [*Vector 
 
 <p>
 <a href="https://www.bengreenberg.dev/blog?ref=github-profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/writing-dark.svg?v=e57ccfb1"><img src="assets/writing-light.svg?v=e57ccfb1" alt="Latest writing: Your MCP Debug Log Should Not Become a Credential Store; Jev answers in half a second. I still moved my private decisions to a local model.; What stateless MCP changes for gateways" width="49.4%"></picture></a>
-<a href="https://www.youtube.com/watch?v=0o8SBjQmy5o"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/video-dark.svg?v=519469a7"><img src="assets/video-light.svg?v=519469a7" alt="Latest video: USDG on GMX, Morpho, Fluid, and Uniswap v4" width="49.4%"></picture></a>
+<a href="https://www.youtube.com/watch?v=e--9lkFwzHQ"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/video-dark.svg?v=afd543de"><img src="assets/video-light.svg?v=afd543de" alt="Latest video: An open source USDG earn app for Arbitrum developers" width="49.4%"></picture></a>
 </p>
 
 ## Building lately
