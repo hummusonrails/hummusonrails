@@ -40,6 +40,20 @@
  },
  "repos": [
   {
+   "name": "arbitrum-usdg-examples",
+   "description": "Runnable examples for building with USDG, the Global Dollar issued by Paxos, on Arbitrum One.",
+   "language": "TypeScript",
+   "pushed_at": "2026-10-23T12:13:47Z",
+   "html_url": "https://github.com/hummusonrails/arbitrum-usdg-examples"
+  },
+  {
+   "name": "aaif-agent-stack-examples",
+   "description": "Four new Agentic AI Foundation projects (Agent Skills, Open Responses, OpenEnv, OpenSandbox), each put to work on a small, realistic task you can run",
+   "language": "Python",
+   "pushed_at": "2026-10-23T11:57:00Z",
+   "html_url": "https://github.com/hummusonrails/aaif-agent-stack-examples"
+  },
+  {
    "name": "x402-facilitator",
    "description": "A complete x402 facilitator implementation for Arbitrum",
    "language": "TypeScript",
@@ -47,25 +61,11 @@
    "html_url": "https://github.com/hummusonrails/x402-facilitator"
   },
   {
-   "name": "arbitrum-usdg-examples",
-   "description": "Runnable examples for building with USDG, the Global Dollar issued by Paxos, on Arbitrum One.",
-   "language": "TypeScript",
-   "pushed_at": "2026-10-21T12:30:16Z",
-   "html_url": "https://github.com/hummusonrails/arbitrum-usdg-examples"
-  },
-  {
    "name": "arbitrum-stylus-multi-contract-example",
    "description": "Multi-contract workspace example with Arbitrum Stylus",
    "language": "TypeScript",
    "pushed_at": "2026-10-19T09:19:06Z",
    "html_url": "https://github.com/hummusonrails/arbitrum-stylus-multi-contract-example"
-  },
-  {
-   "name": "arbitrum-mpp-example",
-   "description": "Self-contained MPP payments on Arbitrum with Solidity, EIP-3009, and Permit2",
-   "language": "TypeScript",
-   "pushed_at": "2026-09-14T11:21:31Z",
-   "html_url": "https://github.com/hummusonrails/arbitrum-mpp-example"
   }
  ]
 }

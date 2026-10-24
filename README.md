@@ -18,12 +18,12 @@ I lead developer relations at [Arbitrum](https://arbitrum.io). I wrote [*Vector 
 ## Building lately
 
 <p>
-<a href="https://github.com/hummusonrails/x402-facilitator"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-1-dark.svg?v=c1ed9826"><img src="assets/repo-1-light.svg?v=c1ed9826" alt="x402-facilitator: A complete x402 facilitator implementation for Arbitrum" width="49.4%"></picture></a>
-<a href="https://github.com/hummusonrails/arbitrum-usdg-examples"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-2-dark.svg?v=4548f830"><img src="assets/repo-2-light.svg?v=4548f830" alt="arbitrum-usdg-examples: Runnable examples for building with USDG, the Global Dollar issued by Paxos, on Arbitrum One." width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/arbitrum-usdg-examples"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-1-dark.svg?v=7fbf1257"><img src="assets/repo-1-light.svg?v=7fbf1257" alt="arbitrum-usdg-examples: Runnable examples for building with USDG, the Global Dollar issued by Paxos, on Arbitrum One." width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/aaif-agent-stack-examples"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-2-dark.svg?v=b1ddbe88"><img src="assets/repo-2-light.svg?v=b1ddbe88" alt="aaif-agent-stack-examples: Four new Agentic AI Foundation projects (Agent Skills, Open Responses, OpenEnv, OpenSandbox), each put to work on a small, realistic task you can run" width="49.4%"></picture></a>
 </p>
 <p>
-<a href="https://github.com/hummusonrails/arbitrum-stylus-multi-contract-example"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-3-dark.svg?v=72bd0a0b"><img src="assets/repo-3-light.svg?v=72bd0a0b" alt="arbitrum-stylus-multi-contract-example: Multi-contract workspace example with Arbitrum Stylus" width="49.4%"></picture></a>
-<a href="https://github.com/hummusonrails/arbitrum-mpp-example"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-4-dark.svg?v=ee399d03"><img src="assets/repo-4-light.svg?v=ee399d03" alt="arbitrum-mpp-example: Self-contained MPP payments on Arbitrum with Solidity, EIP-3009, and Permit2" width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/x402-facilitator"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-3-dark.svg?v=c1ed9826"><img src="assets/repo-3-light.svg?v=c1ed9826" alt="x402-facilitator: A complete x402 facilitator implementation for Arbitrum" width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/arbitrum-stylus-multi-contract-example"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-4-dark.svg?v=72bd0a0b"><img src="assets/repo-4-light.svg?v=72bd0a0b" alt="arbitrum-stylus-multi-contract-example: Multi-contract workspace example with Arbitrum Stylus" width="49.4%"></picture></a>
 </p>
 
 <p align="center">
