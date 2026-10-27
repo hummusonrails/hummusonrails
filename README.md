@@ -11,19 +11,19 @@ I lead developer relations at [Arbitrum](https://arbitrum.io). I wrote [*Vector 
 </p>
 
 <p>
-<a href="https://www.bengreenberg.dev/blog?ref=github-profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/writing-dark.svg?v=e57ccfb1"><img src="assets/writing-light.svg?v=e57ccfb1" alt="Latest writing: Your MCP Debug Log Should Not Become a Credential Store; Jev answers in half a second. I still moved my private decisions to a local model.; What stateless MCP changes for gateways" width="49.4%"></picture></a>
+<a href="https://www.bengreenberg.dev/blog?ref=github-profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/writing-dark.svg?v=e1f07e07"><img src="assets/writing-light.svg?v=e1f07e07" alt="Latest writing: USDG markets are live. Your integration can be next.; Your MCP Debug Log Should Not Become a Credential Store; Jev answers in half a second. I still moved my private decisions to a local model." width="49.4%"></picture></a>
 <a href="https://www.youtube.com/watch?v=pxveXXIFYLM"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/video-dark.svg?v=5fdf46a2"><img src="assets/video-light.svg?v=5fdf46a2" alt="Latest video: 4 New AAIF Projects, 4 Real Jobs: Agent Skills, Open Responses, OpenEnv, OpenSandbox" width="49.4%"></picture></a>
 </p>
 
 ## Building lately
 
 <p>
-<a href="https://github.com/hummusonrails/arbitrum-usdg-examples"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-1-dark.svg?v=7fbf1257"><img src="assets/repo-1-light.svg?v=7fbf1257" alt="arbitrum-usdg-examples: Runnable examples for building with USDG, the Global Dollar issued by Paxos, on Arbitrum One." width="49.4%"></picture></a>
-<a href="https://github.com/hummusonrails/aaif-agent-stack-examples"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-2-dark.svg?v=b1ddbe88"><img src="assets/repo-2-light.svg?v=b1ddbe88" alt="aaif-agent-stack-examples: Four new Agentic AI Foundation projects (Agent Skills, Open Responses, OpenEnv, OpenSandbox), each put to work on a small, realistic task you can run" width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/arbitrum-stylus-multi-contract-example"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-1-dark.svg?v=d7e4d7e4"><img src="assets/repo-1-light.svg?v=d7e4d7e4" alt="arbitrum-stylus-multi-contract-example: Multi-contract workspace example with Arbitrum Stylus" width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/arbitrum-usdg-examples"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-2-dark.svg?v=7fbf1257"><img src="assets/repo-2-light.svg?v=7fbf1257" alt="arbitrum-usdg-examples: Runnable examples for building with USDG, the Global Dollar issued by Paxos, on Arbitrum One." width="49.4%"></picture></a>
 </p>
 <p>
-<a href="https://github.com/hummusonrails/x402-facilitator"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-3-dark.svg?v=c1ed9826"><img src="assets/repo-3-light.svg?v=c1ed9826" alt="x402-facilitator: A complete x402 facilitator implementation for Arbitrum" width="49.4%"></picture></a>
-<a href="https://github.com/hummusonrails/arbitrum-stylus-multi-contract-example"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-4-dark.svg?v=72bd0a0b"><img src="assets/repo-4-light.svg?v=72bd0a0b" alt="arbitrum-stylus-multi-contract-example: Multi-contract workspace example with Arbitrum Stylus" width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/aaif-agent-stack-examples"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-3-dark.svg?v=b1ddbe88"><img src="assets/repo-3-light.svg?v=b1ddbe88" alt="aaif-agent-stack-examples: Four new Agentic AI Foundation projects (Agent Skills, Open Responses, OpenEnv, OpenSandbox), each put to work on a small, realistic task you can run" width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/x402-facilitator"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-4-dark.svg?v=c1ed9826"><img src="assets/repo-4-light.svg?v=c1ed9826" alt="x402-facilitator: A complete x402 facilitator implementation for Arbitrum" width="49.4%"></picture></a>
 </p>
 
 <p align="center">
