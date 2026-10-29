@@ -40,18 +40,18 @@
  },
  "repos": [
   {
+   "name": "arbitrum-usdg-examples",
+   "description": "Runnable examples for building with USDG, the Global Dollar issued by Paxos, on Arbitrum One.",
+   "language": "TypeScript",
+   "pushed_at": "2026-10-28T12:30:17Z",
+   "html_url": "https://github.com/hummusonrails/arbitrum-usdg-examples"
+  },
+  {
    "name": "arbitrum-stylus-multi-contract-example",
    "description": "Multi-contract workspace example with Arbitrum Stylus",
    "language": "TypeScript",
    "pushed_at": "2026-10-26T09:20:58Z",
    "html_url": "https://github.com/hummusonrails/arbitrum-stylus-multi-contract-example"
-  },
-  {
-   "name": "arbitrum-usdg-examples",
-   "description": "Runnable examples for building with USDG, the Global Dollar issued by Paxos, on Arbitrum One.",
-   "language": "TypeScript",
-   "pushed_at": "2026-10-23T12:13:47Z",
-   "html_url": "https://github.com/hummusonrails/arbitrum-usdg-examples"
   },
   {
    "name": "aaif-agent-stack-examples",

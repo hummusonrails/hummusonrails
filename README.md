@@ -18,8 +18,8 @@ I lead developer relations at [Arbitrum](https://arbitrum.io). I wrote [*Vector 
 ## Building lately
 
 <p>
-<a href="https://github.com/hummusonrails/arbitrum-stylus-multi-contract-example"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-1-dark.svg?v=d7e4d7e4"><img src="assets/repo-1-light.svg?v=d7e4d7e4" alt="arbitrum-stylus-multi-contract-example: Multi-contract workspace example with Arbitrum Stylus" width="49.4%"></picture></a>
-<a href="https://github.com/hummusonrails/arbitrum-usdg-examples"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-2-dark.svg?v=7fbf1257"><img src="assets/repo-2-light.svg?v=7fbf1257" alt="arbitrum-usdg-examples: Runnable examples for building with USDG, the Global Dollar issued by Paxos, on Arbitrum One." width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/arbitrum-usdg-examples"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-1-dark.svg?v=0bc4ecb9"><img src="assets/repo-1-light.svg?v=0bc4ecb9" alt="arbitrum-usdg-examples: Runnable examples for building with USDG, the Global Dollar issued by Paxos, on Arbitrum One." width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/arbitrum-stylus-multi-contract-example"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-2-dark.svg?v=d7e4d7e4"><img src="assets/repo-2-light.svg?v=d7e4d7e4" alt="arbitrum-stylus-multi-contract-example: Multi-contract workspace example with Arbitrum Stylus" width="49.4%"></picture></a>
 </p>
 <p>
 <a href="https://github.com/hummusonrails/aaif-agent-stack-examples"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-3-dark.svg?v=b1ddbe88"><img src="assets/repo-3-light.svg?v=b1ddbe88" alt="aaif-agent-stack-examples: Four new Agentic AI Foundation projects (Agent Skills, Open Responses, OpenEnv, OpenSandbox), each put to work on a small, realistic task you can run" width="49.4%"></picture></a>
