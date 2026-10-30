@@ -40,6 +40,13 @@
  },
  "repos": [
   {
+   "name": "confidential-battleship-arbitrum",
+   "description": "Confidential Battleship on Arbitrum with Fhenix CoFHE: a hidden fleet computed under fully homomorphic encryption (FHE), about 2 seconds a shot, raced against Ethereum.",
+   "language": "JavaScript",
+   "pushed_at": "2026-10-29T16:32:59Z",
+   "html_url": "https://github.com/hummusonrails/confidential-battleship-arbitrum"
+  },
+  {
    "name": "arbitrum-usdg-examples",
    "description": "Runnable examples for building with USDG, the Global Dollar issued by Paxos, on Arbitrum One.",
    "language": "TypeScript",
@@ -59,13 +66,6 @@
    "language": "Python",
    "pushed_at": "2026-10-23T11:57:00Z",
    "html_url": "https://github.com/hummusonrails/aaif-agent-stack-examples"
-  },
-  {
-   "name": "x402-facilitator",
-   "description": "A complete x402 facilitator implementation for Arbitrum",
-   "language": "TypeScript",
-   "pushed_at": "2026-10-21T13:00:15Z",
-   "html_url": "https://github.com/hummusonrails/x402-facilitator"
   }
  ]
 }
