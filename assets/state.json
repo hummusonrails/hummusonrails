@@ -43,7 +43,7 @@
    "name": "confidential-battleship-arbitrum",
    "description": "Confidential Battleship on Arbitrum with Fhenix CoFHE: a hidden fleet computed under fully homomorphic encryption (FHE), about 2 seconds a shot, raced against Ethereum.",
    "language": "JavaScript",
-   "pushed_at": "2026-10-29T16:32:59Z",
+   "pushed_at": "2026-10-30T12:43:01Z",
    "html_url": "https://github.com/hummusonrails/confidential-battleship-arbitrum"
   },
   {

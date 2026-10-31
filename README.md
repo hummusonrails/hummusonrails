@@ -18,7 +18,7 @@ I lead developer relations at [Arbitrum](https://arbitrum.io). I wrote [*Vector 
 ## Building lately
 
 <p>
-<a href="https://github.com/hummusonrails/confidential-battleship-arbitrum"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-1-dark.svg?v=f6b9aeff"><img src="assets/repo-1-light.svg?v=f6b9aeff" alt="confidential-battleship-arbitrum: Confidential Battleship on Arbitrum with Fhenix CoFHE: a hidden fleet computed under fully homomorphic encryption (FHE), about 2 seconds a shot, raced against Ethereum." width="49.4%"></picture></a>
+<a href="https://github.com/hummusonrails/confidential-battleship-arbitrum"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-1-dark.svg?v=bbb771fd"><img src="assets/repo-1-light.svg?v=bbb771fd" alt="confidential-battleship-arbitrum: Confidential Battleship on Arbitrum with Fhenix CoFHE: a hidden fleet computed under fully homomorphic encryption (FHE), about 2 seconds a shot, raced against Ethereum." width="49.4%"></picture></a>
 <a href="https://github.com/hummusonrails/arbitrum-usdg-examples"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/repo-2-dark.svg?v=0bc4ecb9"><img src="assets/repo-2-light.svg?v=0bc4ecb9" alt="arbitrum-usdg-examples: Runnable examples for building with USDG, the Global Dollar issued by Paxos, on Arbitrum One." width="49.4%"></picture></a>
 </p>
 <p>
