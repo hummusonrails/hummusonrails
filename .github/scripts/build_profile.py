@@ -467,7 +467,7 @@ def readme(posts: list[dict], video: dict, repos: list[dict], contributions: lis
                       + "+".join(f"-user%3A{o}" for o in sorted(NOT_UPSTREAM)))
         upstream_section = f"""## Open source
 
-Recent open source work merged into projects other people maintain.
+Recent open source work.
 
 {cards}
 

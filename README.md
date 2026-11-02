@@ -12,7 +12,7 @@ I lead developer relations at [Arbitrum](https://arbitrum.io) and I am an [AAIF]
 
 ## Open source
 
-Recent open source work merged into projects other people maintain.
+Recent open source work.
 
 <p><a href="https://github.com/openclaw/openclaw/pull/190340"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contrib-1-dark.svg?v=cf6b4de0"><img src="assets/contrib-1-light.svg?v=cf6b4de0" alt="Merged pull request to openclaw/openclaw: fix: render HTML headings in Telegram rich messages. Pull request #190340, merged November 1, 2026." width="100%"></picture></a></p>
 <p><a href="https://github.com/openclaw/openclaw/pull/190144"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contrib-2-dark.svg?v=b1db649f"><img src="assets/contrib-2-light.svg?v=b1db649f" alt="Merged pull request to openclaw/openclaw: fix: gateway status shows single-gateway advice under external supervision. Pull request #190144, merged November 1, 2026." width="100%"></picture></a></p>
