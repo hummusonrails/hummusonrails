@@ -8,8 +8,9 @@ GitHub strips CSS and scripts from READMEs, so each designed element is an
 SVG in assets/. Text is shaped with HarfBuzz and drawn as outlines, so the
 cards look the same everywhere without loading a web font.
 
-Live data comes from three public sources: the blog RSS feed, the YouTube
-Data API, and the public repo list. If a source fails, the last good data
+Live data comes from four public sources: the blog RSS feed, the YouTube
+Data API, the public repo list, and merged pull requests to other people's
+repos (GitHub GraphQL search). If a source fails, the last good data
 in assets/state.json is reused so a hiccup never blanks a card, and the
 script exits 3 after building so the workflow run goes red.
 
@@ -47,6 +48,11 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) hummusonrails-profile"
 
 # Public repos that are tooling, fixtures or asset dumps, not work to show off.
 SKIP_REPOS = {USER, "devto-blog-assets", "oss-hunter-livefire", "agent-playground"}
+
+# Upstream contributions are merged PRs to projects other people maintain: the
+# day job's org, my own orgs and bounty boards are left out.
+NOT_UPSTREAM = {USER, "ArbitrumFoundation", "OffchainLabs", "EdgeFinder-Apps", "mergeos-bounties"}
+CONTRIBUTIONS = 3
 
 THEMES = {
     # Neutrals are GitHub's own Primer page colors, so the cards sit flush on the profile.
@@ -271,6 +277,23 @@ def repo_card(t: dict, r: dict) -> str:
     return svg(W, H, body, t, fill=t["surf"])
 
 
+def contribution_card(t: dict, c: dict) -> str:
+    W, P = 840, 36
+    m = mono()
+    titles = wrap(display(600), c["title"], 26, W - 2 * P, 2)
+    H = 98 + 34 * len(titles) + 28
+    body = text(m, "/", P, 56, 19, t["acc"])
+    body += text(m, c["repo"], P + width(m, "/ ", 19), 56, 19, t["fg"])
+    merged = datetime.fromisoformat(c["merged_at"].replace("Z", "+00:00"))
+    body += label("merged " + fmt_date(merged), W - P, 56, 14, t["acc2"], anchor="end")
+    y = 100
+    for line in titles:
+        body += text(display(600), line, P, y, 26, t["fg"])
+        y += 34
+    body += text(m, f"PR #{c['number']}", P, y + 4, 15, t["muted"])
+    return svg(W, H, body, t, fill=t["surf"])
+
+
 # ---------------------------------------------------------------- data
 
 def get(url: str, token: str | None = None, timeout: int = 20):
@@ -334,6 +357,50 @@ def fetch_repos() -> list[dict]:
     return keep
 
 
+CONTRIB_QUERY = """query($q: String!, $after: String) {
+  search(query: $q, type: ISSUE, first: 50, after: $after) {
+    pageInfo { hasNextPage endCursor }
+    nodes { ... on PullRequest { number title url mergedAt author { login }
+      repository { nameWithOwner isPrivate isFork owner { login } } } }
+  }
+}"""
+
+
+def upstream(repo: dict) -> bool:
+    owner = (repo.get("owner") or {}).get("login", "")
+    return (owner not in NOT_UPSTREAM and not repo.get("isPrivate") and not repo.get("isFork")
+            and "bount" not in repo.get("nameWithOwner", "").lower())
+
+
+def fetch_contributions() -> list[dict]:
+    """Merged PRs I authored in public repos other people maintain, newest merge
+    first. Search returns them in its own order, so every page is read and
+    sorted locally."""
+    token = os.environ.get("GITHUB_TOKEN")
+    if not token:
+        raise ValueError("GITHUB_TOKEN is not set")
+    q = f"is:pr is:merged is:public author:{USER} " + " ".join(f"-user:{o}" for o in sorted(NOT_UPSTREAM))
+    found, after = {}, None
+    for _ in range(10):
+        req = urllib.request.Request("https://api.github.com/graphql", method="POST",
+                                     data=json.dumps({"query": CONTRIB_QUERY, "variables": {"q": q, "after": after}}).encode(),
+                                     headers={"User-Agent": UA, "Authorization": f"Bearer {token}"})
+        with urllib.request.urlopen(req, timeout=20) as res:
+            data = json.loads(res.read())
+        if data.get("errors"):
+            raise ValueError(data["errors"][0].get("message", "GraphQL error"))
+        search = data["data"]["search"]
+        for n in search["nodes"]:
+            if (n.get("mergedAt") and (n.get("author") or {}).get("login") == USER
+                    and upstream(n.get("repository") or {}) and n.get("url", "").startswith("https://github.com/")):
+                found[n["url"]] = dict(repo=n["repository"]["nameWithOwner"], number=n["number"],
+                                       title=n["title"].strip(), url=n["url"], merged_at=n["mergedAt"])
+        if not search["pageInfo"]["hasNextPage"]:
+            break
+        after = search["pageInfo"]["endCursor"]
+    return sorted(found.values(), key=lambda c: (c["merged_at"], c["url"]), reverse=True)[:CONTRIBUTIONS]
+
+
 # ---------------------------------------------------------------- readme
 
 def picture(name: str, alt: str, width: str, href: str, version: str = "") -> str:
@@ -375,7 +442,7 @@ PIXELS = (pixel("view") + pixel("viewer")
 TO_SITE = f"{SITE}/?ref=github-profile"
 
 
-def readme(posts: list[dict], video: dict, repos: list[dict], versions: dict) -> str:
+def readme(posts: list[dict], video: dict, repos: list[dict], contributions: list[dict], versions: dict) -> str:
     tile_alts = [f'{x["title"]}. {x["sub"]}' for x in TILES]
     tiles_row = "\n".join(picture(f"tile-{i + 1}", tile_alts[i], "32.6%", x["href"], versions[f"tile-{i + 1}"])
                           for i, x in enumerate(TILES))
@@ -389,17 +456,35 @@ def readme(posts: list[dict], video: dict, repos: list[dict], versions: dict) ->
         repo_rows.append("\n".join(
             picture(f"repo-{j + 1}", f'{repos[j]["name"]}: {repos[j]["description"]}', "49.4%",
                     repos[j]["html_url"], versions[f"repo-{j + 1}"]) for j in (i, i + 1)))
+    upstream_section = ""
+    if contributions:
+        cards = "\n".join(
+            "<p>" + picture(f"contrib-{i + 1}", f'Merged pull request to {c["repo"]}: {c["title"]}. Pull request '
+                            f'#{c["number"]}, merged {datetime.fromisoformat(c["merged_at"].replace("Z", "+00:00")):%B %-d, %Y}.',
+                            "100%", c["url"], versions[f"contrib-{i + 1}"]) + "</p>"
+            for i, c in enumerate(contributions))
+        everything = (f"https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3A{USER}+"
+                      + "+".join(f"-user%3A{o}" for o in sorted(NOT_UPSTREAM)))
+        upstream_section = f"""## Open source
+
+Recent open source work merged into projects other people maintain.
+
+{cards}
+
+<a href="{everything}">All my merged upstream pull requests</a>
+
+"""
     return f"""<!-- Generated by .github/scripts/build_profile.py. Edit the script, not this file. -->
 
 {picture("hero", "Ben Greenberg. DevRel and technical GTM leader: building teams, driving product adoption.", "100%", TO_SITE, versions["hero"])}
 
-I lead developer relations at [Arbitrum](https://arbitrum.io). I wrote [*Vector Search with JavaScript*](https://pragprog.com/titles/bgvector/vector-search-with-javascript/) for The Pragmatic Bookshelf, and I spent a decade in adult education and community organizing that I bring with me to my work in building developer communities.
+I lead developer relations at [Arbitrum](https://arbitrum.io) and I am an [AAIF](https://aaif.io) Ambassador. I wrote [*Vector Search with JavaScript*](https://pragprog.com/titles/bgvector/vector-search-with-javascript/) for The Pragmatic Bookshelf, and I spent a decade in adult education and community organizing that I bring with me to my work in building developer communities.
 
 <p>
 {tiles_row}
 </p>
 
-<p>
+{upstream_section}<p>
 {feeds_row}
 </p>
 
@@ -423,7 +508,8 @@ I lead developer relations at [Arbitrum](https://arbitrum.io). I wrote [*Vector 
 def main() -> None:
     state = json.loads(STATE.read_text()) if STATE.exists() else {}
     stale = []
-    for key, fetch in (("posts", fetch_posts), ("video", fetch_video), ("repos", fetch_repos)):
+    for key, fetch in (("posts", fetch_posts), ("video", fetch_video), ("repos", fetch_repos),
+                       ("contributions", fetch_contributions)):
         try:
             state[key] = fetch()
         except Exception as e:  # keep the last good data rather than blanking a card
@@ -443,13 +529,15 @@ def main() -> None:
         files.setdefault("video", {})[mode] = v
         for i, r in enumerate(state["repos"]):
             files.setdefault(f"repo-{i + 1}", {})[mode] = repo_card(t, r)
+        for i, c in enumerate(state["contributions"]):
+            files.setdefault(f"contrib-{i + 1}", {})[mode] = contribution_card(t, c)
 
     versions = {}
     for name, modes in files.items():
         for mode, content in modes.items():
             (ASSETS / f"{name}-{mode}.svg").write_text(content)
         versions[name] = hashlib.sha1("".join(modes.values()).encode()).hexdigest()[:8]
-    (ROOT / "README.md").write_text(readme(state["posts"], state["video"], state["repos"], versions))
+    (ROOT / "README.md").write_text(readme(state["posts"], state["video"], state["repos"], state["contributions"], versions))
     print("built", len(files) * 2, "cards")
     if stale:
         raise SystemExit(3)

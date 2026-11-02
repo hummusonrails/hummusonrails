@@ -2,13 +2,23 @@
 
 <a href="https://www.bengreenberg.dev/?ref=github-profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg?v=08cea06b"><img src="assets/hero-light.svg?v=08cea06b" alt="Ben Greenberg. DevRel and technical GTM leader: building teams, driving product adoption." width="100%"></picture></a>
 
-I lead developer relations at [Arbitrum](https://arbitrum.io). I wrote [*Vector Search with JavaScript*](https://pragprog.com/titles/bgvector/vector-search-with-javascript/) for The Pragmatic Bookshelf, and I spent a decade in adult education and community organizing that I bring with me to my work in building developer communities.
+I lead developer relations at [Arbitrum](https://arbitrum.io) and I am an [AAIF](https://aaif.io) Ambassador. I wrote [*Vector Search with JavaScript*](https://pragprog.com/titles/bgvector/vector-search-with-javascript/) for The Pragmatic Bookshelf, and I spent a decade in adult education and community organizing that I bring with me to my work in building developer communities.
 
 <p>
 <a href="https://arbitrum.io"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-1-dark.svg?v=45bbdf0a"><img src="assets/tile-1-light.svg?v=45bbdf0a" alt="DevRel at Arbitrum. Getting more developers from first code to production on Arbitrum." width="32.6%"></picture></a>
 <a href="https://pragprog.com/titles/bgvector/vector-search-with-javascript/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-2-dark.svg?v=f47e664e"><img src="assets/tile-2-light.svg?v=f47e664e" alt="Vector Search with JavaScript. Pragmatic Bookshelf." width="32.6%"></picture></a>
 <a href="https://codeplusconduct.substack.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/tile-3-dark.svg?v=fddcca69"><img src="assets/tile-3-light.svg?v=fddcca69" alt="Code and Conduct. Technology, ethics, and the people between them." width="32.6%"></picture></a>
 </p>
+
+## Open source
+
+Recent open source work merged into projects other people maintain.
+
+<p><a href="https://github.com/openclaw/openclaw/pull/190340"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contrib-1-dark.svg?v=cf6b4de0"><img src="assets/contrib-1-light.svg?v=cf6b4de0" alt="Merged pull request to openclaw/openclaw: fix: render HTML headings in Telegram rich messages. Pull request #190340, merged November 1, 2026." width="100%"></picture></a></p>
+<p><a href="https://github.com/openclaw/openclaw/pull/190144"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contrib-2-dark.svg?v=b1db649f"><img src="assets/contrib-2-light.svg?v=b1db649f" alt="Merged pull request to openclaw/openclaw: fix: gateway status shows single-gateway advice under external supervision. Pull request #190144, merged November 1, 2026." width="100%"></picture></a></p>
+<p><a href="https://github.com/rubyevents/rubyevents/pull/361"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contrib-3-dark.svg?v=c94d097a"><img src="assets/contrib-3-light.svg?v=c94d097a" alt="Merged pull request to rubyevents/rubyevents: add emea on rails 2021. Pull request #361, merged November 3, 2024." width="100%"></picture></a></p>
+
+<a href="https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3Ahummusonrails+-user%3AArbitrumFoundation+-user%3AEdgeFinder-Apps+-user%3AOffchainLabs+-user%3Ahummusonrails+-user%3Amergeos-bounties">All my merged upstream pull requests</a>
 
 <p>
 <a href="https://www.bengreenberg.dev/blog?ref=github-profile"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/writing-dark.svg?v=e1f07e07"><img src="assets/writing-light.svg?v=e1f07e07" alt="Latest writing: USDG markets are live. Your integration can be next.; Your MCP Debug Log Should Not Become a Credential Store; Jev answers in half a second. I still moved my private decisions to a local model." width="49.4%"></picture></a>
