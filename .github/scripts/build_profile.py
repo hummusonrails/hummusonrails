@@ -50,6 +50,7 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) hummusonrails-profile"
 # day job's org, my own orgs and bounty boards are left out.
 NOT_UPSTREAM = {USER, "ArbitrumFoundation", "OffchainLabs", "EdgeFinder-Apps", "mergeos-bounties"}
 CONTRIBUTIONS = 3
+CARD_W = 640
 
 THEMES = {
     # Neutrals are GitHub's own Primer page colors, so the cards sit flush on the profile.
@@ -153,8 +154,6 @@ def label(s: str, x: float, y: float, size: float, fill: str, anchor="start") ->
 
 
 HERO_LINES = ("DEVELOPER RELATIONS · AUTHOR · AAIF AMBASSADOR", "TECHNOLOGY, ETHICS, AND THE PEOPLE BETWEEN THEM")
-# The same words broken by hand for the phone hero, so no phrase splits.
-HERO_LINES_NARROW = ("DEVELOPER RELATIONS · AUTHOR", "AAIF AMBASSADOR", "TECHNOLOGY, ETHICS, AND", "THE PEOPLE BETWEEN THEM")
 
 
 # ---------------------------------------------------------------- cards
@@ -175,45 +174,25 @@ def hero(t: dict, mode: str) -> str:
     return svg(W, H, body, t)
 
 
-def hero_narrow(t: dict, mode: str) -> str:
-    """The hero for phones: the same parts on a narrower canvas, the tagline wrapped so it stays readable."""
-    W, P = 520, 28
-    body = text(mono(), USER.upper(), P, 44, 14, t["fg2"], track=0.12)
-    greeting = "GN" if mode == "dark" else "GM"
-    body += text(mono(medium=True), greeting, W - P, 44, 14, t["acc2"], track=0.12, anchor="end")
-    gx = W - P - width(mono(medium=True), greeting, 14, 0.12) - 11
-    body += f'<circle cx="{gx:.1f}" cy="39.5" r="3.5" fill="{t["acc"]}"/>'
-    big = display(900)
-    body += text(big, "BEN", P - 3, 118, 74, t["fg"], track=-0.035)
-    body += text(big, "GREENBERG", P - 3, 182, 74, t["fg"], track=-0.035)
-    body += f'<rect x="{P}" y="202" width="270" height="4" rx="2" fill="{t["acc"]}"/>'
-    y = 240
-    for i, line in enumerate(HERO_LINES_NARROW):
-        y += 10 if i == 2 else 0
-        body += text(mono(), line, P, y, 20, t["fg2"], track=0.04)
-        y += 28
-    return svg(W, y + 6, body, t)
-
-
 def fmt_date(d: datetime) -> str:
     return d.strftime("%b %-d, %Y").upper()
 
 
-def contribution_card(t: dict, c: dict, narrow: bool = False) -> str:
-    # Drawn twice: wide for desktop, and narrow for phones, where a narrow canvas scales down less.
-    W, P = (600, 28) if narrow else (840, 36)
+def contribution_card(t: dict, c: dict) -> str:
+    """Shown at its own size (CARD_W), not stretched to the column, and shrunk to fit on a phone."""
+    W, P = CARD_W, 24
     m = mono()
-    titles = wrap(display(600), c["title"], 26, W - 2 * P, 3)
-    H = 92 + 33 * len(titles) + 30
-    body = text(m, "/", P, 50, 18, t["acc"])
-    body += text(m, c["repo"], P + width(m, "/ ", 18), 50, 18, t["fg"])
+    titles = wrap(display(600), c["title"], 22, W - 2 * P, 2)
+    H = 76 + 28 * len(titles) + 26
+    body = text(m, "/", P, 42, 16, t["acc"])
+    body += text(m, c["repo"], P + width(m, "/ ", 16), 42, 16, t["fg"])
     merged = datetime.fromisoformat(c["merged_at"].replace("Z", "+00:00"))
-    body += label("merged " + fmt_date(merged), W - P, 50, 14, t["acc2"], anchor="end")
-    y = 92
+    body += label("merged " + fmt_date(merged), W - P, 42, 13, t["acc2"], anchor="end")
+    y = 78
     for line in titles:
-        body += text(display(600), line, P, y, 26, t["fg"])
-        y += 33
-    body += text(m, f"PR #{c['number']}", P, y + 6, 16, t["muted"])
+        body += text(display(600), line, P, y, 22, t["fg"])
+        y += 28
+    body += text(m, f"PR #{c['number']}", P, y + 4, 14, t["muted"])
     return svg(W, H, body, t, fill=t["surf"])
 
 
@@ -313,17 +292,6 @@ def fetch_contributions() -> list[dict]:
 
 # ---------------------------------------------------------------- readme
 
-def picture_narrow(name: str, alt: str, href: str, version: str) -> str:
-    """Full width, with a narrower card on phones so its text is not shrunk to nothing."""
-    q = f"?v={version}"
-    phone = "(max-width: 543.98px)"
-    return (f'<a href="{href}"><picture>'
-            f'<source media="{phone} and (prefers-color-scheme: dark)" srcset="assets/{name}-narrow-dark.svg{q}">'
-            f'<source media="{phone}" srcset="assets/{name}-narrow-light.svg{q}">'
-            f'<source media="(prefers-color-scheme: dark)" srcset="assets/{name}-dark.svg{q}">'
-            f'<img src="assets/{name}-light.svg{q}" alt="{escape(alt)}" width="100%"></picture></a>')
-
-
 def picture(name: str, alt: str, width: str, href: str, version: str = "") -> str:
     q = f"?v={version}" if version else ""
     return (f'<a href="{href}"><picture>'
@@ -381,9 +349,9 @@ def readme(posts: list[dict], talks: list[dict], video: dict, contributions: lis
     upstream_section = ""
     if contributions:
         cards = "\n".join(
-            "<p>" + picture_narrow(f"contrib-{i + 1}", f'Merged pull request to {c["repo"]}: {c["title"]}. Pull '
-                                   f'request #{c["number"]}, merged {nice(c["merged_at"])}.', c["url"],
-                                   versions[f"contrib-{i + 1}"]) + "</p>"
+            "<p>" + picture(f"contrib-{i + 1}", f'Merged pull request to {c["repo"]}: {c["title"]}. Pull request '
+                            f'#{c["number"]}, merged {nice(c["merged_at"])}.', str(CARD_W), c["url"],
+                            versions[f"contrib-{i + 1}"]) + "</p>"
             for i, c in enumerate(contributions))
         everything = (f"https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3A{USER}+"
                       + "+".join(f"-user%3A{o}" for o in sorted(NOT_UPSTREAM)))
@@ -400,7 +368,7 @@ Recent open source work.
     talk_list = "\n".join(f'- [{escape(x["title"])}]({x["link"]}) · {x["event"]}, {nice(x["date"], day=False)}' for x in talks)
     return f"""<!-- Generated by .github/scripts/build_profile.py. Edit the script, not this file. -->
 
-{picture_narrow("hero", hero_alt, TO_SITE, versions["hero"])}
+{picture("hero", hero_alt, "100%", TO_SITE, versions["hero"])}
 
 <p align="center">
 {nav}
@@ -449,10 +417,8 @@ def main() -> None:
     files: dict[str, dict[str, str]] = {}
     for mode, t in THEMES.items():
         files.setdefault("hero", {})[mode] = hero(t, mode)
-        files.setdefault("hero", {})[f"narrow-{mode}"] = hero_narrow(t, mode)
         for i, c in enumerate(state["contributions"]):
             files.setdefault(f"contrib-{i + 1}", {})[mode] = contribution_card(t, c)
-            files.setdefault(f"contrib-{i + 1}", {})[f"narrow-{mode}"] = contribution_card(t, c, narrow=True)
 
     versions = {}
     for name, modes in files.items():
