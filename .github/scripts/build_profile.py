@@ -8,9 +8,10 @@ GitHub strips CSS and scripts from READMEs, so each designed element is an
 SVG in assets/. Text is shaped with HarfBuzz and drawn as outlines, so the
 cards look the same everywhere without loading a web font.
 
-Live data comes from four public sources: the blog RSS feed, the YouTube
-Data API, the public repo list, and merged pull requests to other people's
-repos (GitHub GraphQL search). If a source fails, the last good data
+Live data comes from four public sources: the blog RSS feed, the talks feed,
+the YouTube Data API, and merged pull requests to other people's repos (GitHub GraphQL
+search). Lists are native Markdown so they read on phones and to screen
+readers; the hero and the contribution cards are SVG. If a source fails, the last good data
 in assets/state.json is reused so a hiccup never blanks a card, and the
 script exits 3 after building so the workflow run goes red.
 
@@ -18,7 +19,6 @@ Run locally:  YOUTUBE_API_KEY=... uv run .github/scripts/build_profile.py
 """
 from __future__ import annotations
 
-import base64
 import email.utils
 import hashlib
 import json
@@ -46,9 +46,6 @@ YT_CHANNEL = "UC3Ug3f0ZZEBl8RQoFI6YNNQ"
 YT_URL = "https://www.youtube.com/@HummusOnRails"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) hummusonrails-profile"
 
-# Public repos that are tooling, fixtures or asset dumps, not work to show off.
-SKIP_REPOS = {USER, "devto-blog-assets", "oss-hunter-livefire", "agent-playground"}
-
 # Upstream contributions are merged PRs to projects other people maintain: the
 # day job's org, my own orgs and bounty boards are left out.
 NOT_UPSTREAM = {USER, "ArbitrumFoundation", "OffchainLabs", "EdgeFinder-Apps", "mergeos-bounties"}
@@ -62,22 +59,8 @@ THEMES = {
                   fg2="#59636e", muted="#59636e", acc="#e85d04", acc2="#b23a00"),
 }
 
-TILES = [
-    dict(label="Day job", title="DevRel at Arbitrum",
-         sub="Getting more developers from first code to production on Arbitrum.",
-         href="https://arbitrum.io"),
-    dict(label="The book", title="Vector Search with JavaScript",
-         sub="Pragmatic Bookshelf.",
-         href="https://pragprog.com/titles/bgvector/vector-search-with-javascript/"),
-    dict(label="Newsletter", title="Code and Conduct",
-         sub="Technology, ethics, and the people between them.",
-         href="https://codeplusconduct.substack.com"),
-]
-
-LANG_COLORS = {
-    "TypeScript": "#3178c6", "JavaScript": "#f1e05a", "Rust": "#dea584", "Python": "#3572A5",
-    "Ruby": "#701516", "Shell": "#89e051", "Solidity": "#AA6746", "Go": "#00ADD8", "Astro": "#ff5a03",
-}
+TALKS_FEED = f"{SITE}/talks.json"
+NEWSLETTER = "https://codeplusconduct.substack.com"
 
 
 # ---------------------------------------------------------------- type
@@ -169,6 +152,11 @@ def label(s: str, x: float, y: float, size: float, fill: str, anchor="start") ->
     return text(mono(medium=True), s.upper(), x, y, size, fill, track=0.12, anchor=anchor)
 
 
+HERO_LINES = ("DEVELOPER RELATIONS · AUTHOR · AAIF AMBASSADOR", "TECHNOLOGY, ETHICS, AND THE PEOPLE BETWEEN THEM")
+# The same words broken by hand for the phone hero, so no phrase splits.
+HERO_LINES_NARROW = ("DEVELOPER RELATIONS · AUTHOR", "AAIF AMBASSADOR", "TECHNOLOGY, ETHICS, AND", "THE PEOPLE BETWEEN THEM")
+
+
 # ---------------------------------------------------------------- cards
 
 def hero(t: dict, mode: str) -> str:
@@ -182,115 +170,50 @@ def hero(t: dict, mode: str) -> str:
     body += text(big, "BEN", 40, 142, 104, t["fg"], track=-0.035)
     body += text(big, "GREENBERG", 40, 232, 104, t["fg"], track=-0.035)
     body += f'<rect x="44" y="256" width="386" height="5" rx="2.5" fill="{t["acc"]}"/>'
-    body += text(mono(), "DEVREL & TECHNICAL GTM LEADER", 44, 290, 18, t["fg2"], track=0.2)
-    body += text(mono(), "BUILDING TEAMS · DRIVING PRODUCT ADOPTION", 44, 318, 18, t["fg2"], track=0.2)
+    body += text(mono(), HERO_LINES[0], 44, 292, 22, t["fg2"], track=0.08)
+    body += text(mono(), HERO_LINES[1], 44, 324, 22, t["fg2"], track=0.08)
     return svg(W, H, body, t)
 
 
-def tiles(t: dict) -> list[str]:
-    W, P = 360, 28
-    layouts = []
-    for tile in TILES:
-        titles = wrap(display(800), tile["title"], 34, W - 2 * P, 3, track=-0.01)
-        subs = wrap(display(400), tile["sub"], 22, W - 2 * P, 4)
-        layouts.append((tile, titles, subs))
-    H = max(110 + 38 * (len(ti) - 1) + 22 + 28 * len(su) for _, ti, su in layouts) + P
-    out = []
-    for tile, titles, subs in layouts:
-        body = label(tile["label"], P, 52, 16, t["acc2"])
-        y = 110
-        for line in titles:
-            body += text(display(800), line, P, y, 34, t["fg"], track=-0.01)
-            y += 38
-        y += 22 - 38 + 28
-        for line in subs:
-            body += text(display(400), line, P, y, 22, t["fg2"])
-            y += 28
-        out.append(svg(W, H, body, t))
-    return out
+def hero_narrow(t: dict, mode: str) -> str:
+    """The hero for phones: the same parts on a narrower canvas, the tagline wrapped so it stays readable."""
+    W, P = 520, 28
+    body = text(mono(), USER.upper(), P, 44, 14, t["fg2"], track=0.12)
+    greeting = "GN" if mode == "dark" else "GM"
+    body += text(mono(medium=True), greeting, W - P, 44, 14, t["acc2"], track=0.12, anchor="end")
+    gx = W - P - width(mono(medium=True), greeting, 14, 0.12) - 11
+    body += f'<circle cx="{gx:.1f}" cy="39.5" r="3.5" fill="{t["acc"]}"/>'
+    big = display(900)
+    body += text(big, "BEN", P - 3, 118, 74, t["fg"], track=-0.035)
+    body += text(big, "GREENBERG", P - 3, 182, 74, t["fg"], track=-0.035)
+    body += f'<rect x="{P}" y="202" width="270" height="4" rx="2" fill="{t["acc"]}"/>'
+    y = 240
+    for i, line in enumerate(HERO_LINES_NARROW):
+        y += 10 if i == 2 else 0
+        body += text(mono(), line, P, y, 20, t["fg2"], track=0.04)
+        y += 28
+    return svg(W, y + 6, body, t)
 
 
 def fmt_date(d: datetime) -> str:
     return d.strftime("%b %-d, %Y").upper()
 
 
-def feed_cards(t: dict, posts: list[dict], video: dict) -> tuple[str, str]:
-    W, P = 500, 32
-    # writing
-    # video
-    th_w = W - 2 * P
-    th_h = th_w * 9 / 16
-    v_lines = wrap(display(600), video["title"], 22, W - 2 * P, 2)
-    v_h = 76 + th_h + 40 + 28 * len(v_lines) + P - 8
-    H = round(v_h)
-    items, used = [], 56
-    for p in posts:
-        lines = wrap(display(600), p["title"], 22, W - 2 * P, 2)
-        if used + 42 + 28 * len(lines) > H - P + 8:
-            break
-        items.append((fmt_date(datetime.fromisoformat(p["date"])), lines))
-        used += 42 + 28 * len(lines)
-
-    body = label("Latest writing", P, 56, 16, t["acc2"])
-    y = 56
-    for date, lines in items:
-        y += 42
-        body += text(mono(), date, P, y, 14, t["muted"], track=0.12)
-        for line in lines:
-            y += 28
-            body += text(display(600), line, P, y, 22, t["fg"])
-    writing = svg(W, H, body, t)
-
-    body = label("On YouTube", P, 56, 16, t["acc2"])
-    ty = 76
-    body += (f'<defs><clipPath id="c"><rect x="{P}" y="{ty}" width="{th_w}" height="{th_h:.1f}" rx="10"/></clipPath></defs>'
-             f'<rect x="{P}" y="{ty}" width="{th_w}" height="{th_h:.1f}" rx="10" fill="{t["surf"]}"/>')
-    if video.get("thumb"):
-        body += (f'<image href="data:image/jpeg;base64,{video["thumb"]}" x="{P}" y="{ty}" width="{th_w}" '
-                 f'height="{th_h:.1f}" preserveAspectRatio="xMidYMid slice" clip-path="url(#c)"/>')
-    cx, cy = P + th_w / 2, ty + th_h / 2
-    body += (f'<circle cx="{cx}" cy="{cy:.1f}" r="30" fill="{t["acc"]}"/>'
-             f'<path d="M{cx - 9} {cy - 14:.1f} L{cx + 15} {cy:.1f} L{cx - 9} {cy + 14:.1f} Z" fill="#0d1117"/>')
-    y = ty + th_h + 40
-    body += text(mono(), fmt_date(datetime.fromisoformat(video["date"])), P, y, 14, t["muted"], track=0.12)
-    for line in v_lines:
-        y += 28
-        body += text(display(600), line, P, y, 22, t["fg"])
-    return writing, svg(W, H, body, t)
-
-
-def repo_card(t: dict, r: dict) -> str:
-    W, H, P = 500, 200, 32
+def contribution_card(t: dict, c: dict, narrow: bool = False) -> str:
+    # Drawn twice: wide for desktop, and narrow for phones, where a narrow canvas scales down less.
+    W, P = (600, 28) if narrow else (840, 36)
     m = mono()
-    name_size = min(21, (W - 2 * P) / max(width(m, "/ " + r["name"], 1), 1))
-    body = text(m, "/", P, 54, name_size, t["acc"])
-    body += text(m, r["name"], P + width(m, "/ ", name_size), 54, name_size, t["fg"])
-    y = 94
-    for line in wrap(display(400), r["description"], 21, W - 2 * P, 2):
-        body += text(display(400), line, P, y, 21, t["fg2"])
-        y += 28
-    lang = r.get("language") or "Code"
-    body += f'<circle cx="{P + 6}" cy="{H - 36}" r="6" fill="{LANG_COLORS.get(lang, t["muted"])}"/>'
-    body += text(m, lang, P + 20, H - 31, 15, t["muted"])
-    pushed = datetime.fromisoformat(r["pushed_at"].replace("Z", "+00:00"))
-    body += label("pushed " + pushed.strftime("%b %-d"), W - P, H - 31, 14, t["muted"], anchor="end")
-    return svg(W, H, body, t, fill=t["surf"])
-
-
-def contribution_card(t: dict, c: dict) -> str:
-    W, P = 840, 36
-    m = mono()
-    titles = wrap(display(600), c["title"], 26, W - 2 * P, 2)
-    H = 98 + 34 * len(titles) + 28
-    body = text(m, "/", P, 56, 19, t["acc"])
-    body += text(m, c["repo"], P + width(m, "/ ", 19), 56, 19, t["fg"])
+    titles = wrap(display(600), c["title"], 26, W - 2 * P, 3)
+    H = 92 + 33 * len(titles) + 30
+    body = text(m, "/", P, 50, 18, t["acc"])
+    body += text(m, c["repo"], P + width(m, "/ ", 18), 50, 18, t["fg"])
     merged = datetime.fromisoformat(c["merged_at"].replace("Z", "+00:00"))
-    body += label("merged " + fmt_date(merged), W - P, 56, 14, t["acc2"], anchor="end")
-    y = 100
+    body += label("merged " + fmt_date(merged), W - P, 50, 14, t["acc2"], anchor="end")
+    y = 92
     for line in titles:
         body += text(display(600), line, P, y, 26, t["fg"])
-        y += 34
-    body += text(m, f"PR #{c['number']}", P, y + 4, 15, t["muted"])
+        y += 33
+    body += text(m, f"PR #{c['number']}", P, y + 6, 16, t["muted"])
     return svg(W, H, body, t, fill=t["surf"])
 
 
@@ -332,29 +255,16 @@ def fetch_video() -> dict:
         raise ValueError("no regular video found")
     item = data["items"][0]
     vid = item["contentDetails"]["videoId"]
-    thumb = base64.b64encode(get(f"https://i.ytimg.com/vi/{vid}/mqdefault.jpg")).decode()
     return dict(id=vid, title=item["snippet"]["title"].strip(),
                 date=item["contentDetails"]["videoPublishedAt"][:10],
-                url=f"https://www.youtube.com/watch?v={vid}", thumb=thumb)
+                url=f"https://www.youtube.com/watch?v={vid}")
 
 
-def fetch_repos() -> list[dict]:
-    """The /users endpoint lists public repos only, even with a token, and we
-    check visibility again, so private work can never reach the profile."""
-    token = os.environ.get("GITHUB_TOKEN")
-    data = json.loads(get(f"https://api.github.com/users/{USER}/repos?type=owner&sort=pushed&per_page=60", token))
-    keep = []
-    for r in data:
-        if r.get("private") or r.get("visibility", "public") != "public":
-            continue
-        if r["fork"] or r["archived"] or r.get("is_template") or not r.get("description") or r["name"] in SKIP_REPOS:
-            continue
-        keep.append({k: r[k] for k in ("name", "description", "language", "pushed_at", "html_url")})
-        if len(keep) == 4:
-            break
-    if len(keep) < 4:
-        raise ValueError("fewer than four public repos qualified")
-    return keep
+def fetch_talks() -> list[dict]:
+    talks = json.loads(get(TALKS_FEED))["talks"]
+    if not talks:
+        raise ValueError("empty talks feed")
+    return [{k: t[k] for k in ("title", "event", "date", "link")} for t in talks[:3]]
 
 
 CONTRIB_QUERY = """query($q: String!, $after: String) {
@@ -403,6 +313,17 @@ def fetch_contributions() -> list[dict]:
 
 # ---------------------------------------------------------------- readme
 
+def picture_narrow(name: str, alt: str, href: str, version: str) -> str:
+    """Full width, with a narrower card on phones so its text is not shrunk to nothing."""
+    q = f"?v={version}"
+    phone = "(max-width: 543.98px)"
+    return (f'<a href="{href}"><picture>'
+            f'<source media="{phone} and (prefers-color-scheme: dark)" srcset="assets/{name}-narrow-dark.svg{q}">'
+            f'<source media="{phone}" srcset="assets/{name}-narrow-light.svg{q}">'
+            f'<source media="(prefers-color-scheme: dark)" srcset="assets/{name}-dark.svg{q}">'
+            f'<img src="assets/{name}-light.svg{q}" alt="{escape(alt)}" width="100%"></picture></a>')
+
+
 def picture(name: str, alt: str, width: str, href: str, version: str = "") -> str:
     q = f"?v={version}" if version else ""
     return (f'<a href="{href}"><picture>'
@@ -442,26 +363,27 @@ PIXELS = (pixel("view") + pixel("viewer")
 TO_SITE = f"{SITE}/?ref=github-profile"
 
 
-def readme(posts: list[dict], video: dict, repos: list[dict], contributions: list[dict], versions: dict) -> str:
-    tile_alts = [f'{x["title"]}. {x["sub"]}' for x in TILES]
-    tiles_row = "\n".join(picture(f"tile-{i + 1}", tile_alts[i], "32.6%", x["href"], versions[f"tile-{i + 1}"])
-                          for i, x in enumerate(TILES))
-    latest = "; ".join(p["title"] for p in posts[:3])
-    feeds_row = "\n".join([
-        picture("writing", f"Latest writing: {latest}", "49.4%", f"{SITE}/blog?ref=github-profile", versions["writing"]),
-        picture("video", f"Latest video: {video['title']}", "49.4%", video["url"], versions["video"]),
+def nice(iso: str, day: bool = True) -> str:
+    d = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+    return d.strftime("%b %-d, %Y") if day else d.strftime("%B %Y")
+
+
+def readme(posts: list[dict], talks: list[dict], video: dict, contributions: list[dict], versions: dict) -> str:
+    hero_alt = f"Ben Greenberg. {HERO_LINES[0].title()}. {HERO_LINES[1].capitalize()}."
+    nav = " &nbsp;·&nbsp; ".join([
+        f'<a href="{TO_SITE}">{PIXELS}bengreenberg.dev</a>',
+        f'<a href="{NEWSLETTER}">Newsletter</a>',
+        f'<a href="{YT_URL}">YouTube</a>',
+        f'<a href="{SITE}/talks?ref=github-profile">Talks</a>',
+        f'<a href="https://x.com/{USER}">X</a>',
+        f'<a href="https://www.linkedin.com/in/{USER}/">LinkedIn</a>',
     ])
-    repo_rows = []
-    for i in range(0, 4, 2):
-        repo_rows.append("\n".join(
-            picture(f"repo-{j + 1}", f'{repos[j]["name"]}: {repos[j]["description"]}', "49.4%",
-                    repos[j]["html_url"], versions[f"repo-{j + 1}"]) for j in (i, i + 1)))
     upstream_section = ""
     if contributions:
         cards = "\n".join(
-            "<p>" + picture(f"contrib-{i + 1}", f'Merged pull request to {c["repo"]}: {c["title"]}. Pull request '
-                            f'#{c["number"]}, merged {datetime.fromisoformat(c["merged_at"].replace("Z", "+00:00")):%B %-d, %Y}.',
-                            "100%", c["url"], versions[f"contrib-{i + 1}"]) + "</p>"
+            "<p>" + picture_narrow(f"contrib-{i + 1}", f'Merged pull request to {c["repo"]}: {c["title"]}. Pull '
+                                   f'request #{c["number"]}, merged {nice(c["merged_at"])}.', c["url"],
+                                   versions[f"contrib-{i + 1}"]) + "</p>"
             for i, c in enumerate(contributions))
         everything = (f"https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3A{USER}+"
                       + "+".join(f"-user%3A{o}" for o in sorted(NOT_UPSTREAM)))
@@ -471,35 +393,40 @@ Recent open source work.
 
 {cards}
 
-<a href="{everything}">All my merged upstream pull requests</a>
+[All my merged upstream pull requests]({everything})
 
 """
+    writing = "\n".join(f'- [{escape(p["title"])}]({p["url"]}) · {nice(p["date"])}' for p in posts[:3])
+    talk_list = "\n".join(f'- [{escape(x["title"])}]({x["link"]}) · {x["event"]}, {nice(x["date"], day=False)}' for x in talks)
     return f"""<!-- Generated by .github/scripts/build_profile.py. Edit the script, not this file. -->
 
-{picture("hero", "Ben Greenberg. DevRel and technical GTM leader: building teams, driving product adoption.", "100%", TO_SITE, versions["hero"])}
+{picture_narrow("hero", hero_alt, TO_SITE, versions["hero"])}
+
+<p align="center">
+{nav}
+</p>
 
 I lead developer relations at [Arbitrum](https://arbitrum.io) and I am an [AAIF](https://aaif.io) Ambassador. I wrote [*Vector Search with JavaScript*](https://pragprog.com/titles/bgvector/vector-search-with-javascript/) for The Pragmatic Bookshelf, and I spent a decade in adult education and community organizing that I bring with me to my work in building developer communities.
 
-<p>
-{tiles_row}
-</p>
+I write [Code and Conduct]({NEWSLETTER}), a newsletter about technology, ethics, and the people between them. **[Subscribe here]({NEWSLETTER}/subscribe).**
 
-{upstream_section}<p>
-{feeds_row}
-</p>
+{upstream_section}## Latest writing
 
-## Building lately
+{writing}
 
-<p>
-{repo_rows[0]}
-</p>
-<p>
-{repo_rows[1]}
-</p>
+[All writing]({SITE}/blog?ref=github-profile)
 
-<p align="center">
-<a href="{TO_SITE}">{PIXELS}bengreenberg.dev</a> &nbsp;·&nbsp; <a href="https://x.com/{USER}">X</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/{USER}/">LinkedIn</a> &nbsp;·&nbsp; <a href="{YT_URL}">YouTube</a> &nbsp;·&nbsp; <a href="https://codeplusconduct.substack.com">Substack</a>
-</p>
+## Latest video
+
+<a href="{video["url"]}"><img src="https://i.ytimg.com/vi/{video["id"]}/mqdefault.jpg" alt="Watch on YouTube: {escape(video["title"])}" width="320"></a>
+
+[{escape(video["title"])}]({video["url"]}) · {nice(video["date"])}
+
+## Recent talks
+
+{talk_list}
+
+[All talks]({SITE}/talks?ref=github-profile)
 """
 
 
@@ -508,7 +435,7 @@ I lead developer relations at [Arbitrum](https://arbitrum.io) and I am an [AAIF]
 def main() -> None:
     state = json.loads(STATE.read_text()) if STATE.exists() else {}
     stale = []
-    for key, fetch in (("posts", fetch_posts), ("video", fetch_video), ("repos", fetch_repos),
+    for key, fetch in (("posts", fetch_posts), ("talks", fetch_talks), ("video", fetch_video),
                        ("contributions", fetch_contributions)):
         try:
             state[key] = fetch()
@@ -522,22 +449,17 @@ def main() -> None:
     files: dict[str, dict[str, str]] = {}
     for mode, t in THEMES.items():
         files.setdefault("hero", {})[mode] = hero(t, mode)
-        for i, s in enumerate(tiles(t)):
-            files.setdefault(f"tile-{i + 1}", {})[mode] = s
-        w, v = feed_cards(t, state["posts"], state["video"])
-        files.setdefault("writing", {})[mode] = w
-        files.setdefault("video", {})[mode] = v
-        for i, r in enumerate(state["repos"]):
-            files.setdefault(f"repo-{i + 1}", {})[mode] = repo_card(t, r)
+        files.setdefault("hero", {})[f"narrow-{mode}"] = hero_narrow(t, mode)
         for i, c in enumerate(state["contributions"]):
             files.setdefault(f"contrib-{i + 1}", {})[mode] = contribution_card(t, c)
+            files.setdefault(f"contrib-{i + 1}", {})[f"narrow-{mode}"] = contribution_card(t, c, narrow=True)
 
     versions = {}
     for name, modes in files.items():
         for mode, content in modes.items():
             (ASSETS / f"{name}-{mode}.svg").write_text(content)
         versions[name] = hashlib.sha1("".join(modes.values()).encode()).hexdigest()[:8]
-    (ROOT / "README.md").write_text(readme(state["posts"], state["video"], state["repos"], state["contributions"], versions))
+    (ROOT / "README.md").write_text(readme(state["posts"], state["talks"], state["video"], state["contributions"], versions))
     print("built", len(files) * 2, "cards")
     if stale:
         raise SystemExit(3)
