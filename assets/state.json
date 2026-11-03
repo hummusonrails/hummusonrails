@@ -1,6 +1,11 @@
 {
  "posts": [
   {
+   "title": "My water heater switch only answered to its own app. Now my OpenClaw assistant runs it.",
+   "url": "https://bengreenberg.dev/blog/my-water-heater-switch-only-answered-to-its-own-app-now-my-openclaw-assistant-runs-it/",
+   "date": "2026-10-31"
+  },
+  {
    "title": "USDG markets are live. Your integration can be next.",
    "url": "https://bengreenberg.dev/blog/usdg-markets-are-live-your-integration-can-be-next/",
    "date": "2026-10-23"
@@ -24,11 +29,6 @@
    "title": "I stopped letting AI write under my name",
    "url": "https://bengreenberg.dev/blog/i-stopped-letting-ai-write-under-my-name/",
    "date": "2026-09-30"
-  },
-  {
-   "title": "Founders spend their feedback slot on the wrong thing",
-   "url": "https://bengreenberg.dev/blog/founders-spend-their-feedback-slot-on-the-wrong-thing/",
-   "date": "2026-09-29"
   }
  ],
  "video": {
