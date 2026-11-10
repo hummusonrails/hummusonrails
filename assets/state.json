@@ -1,6 +1,11 @@
 {
  "posts": [
   {
+   "title": "Your private onchain app is useless if it's slow.",
+   "url": "https://bengreenberg.dev/blog/your-private-onchain-app-is-useless-if-it-s-slow/",
+   "date": "2026-11-02"
+  },
+  {
    "title": "My water heater switch only answered to its own app. Now my OpenClaw assistant runs it.",
    "url": "https://bengreenberg.dev/blog/my-water-heater-switch-only-answered-to-its-own-app-now-my-openclaw-assistant-runs-it/",
    "date": "2026-10-31"
@@ -24,11 +29,6 @@
    "title": "What stateless MCP changes for gateways",
    "url": "https://bengreenberg.dev/blog/what-stateless-mcp-changes-for-gateways/",
    "date": "2026-10-05"
-  },
-  {
-   "title": "I stopped letting AI write under my name",
-   "url": "https://bengreenberg.dev/blog/i-stopped-letting-ai-write-under-my-name/",
-   "date": "2026-09-30"
   }
  ],
  "video": {

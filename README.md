@@ -22,9 +22,9 @@ Recent open source work.
 
 ## Latest writing
 
+- [Your private onchain app is useless if it&#x27;s slow.](https://bengreenberg.dev/blog/your-private-onchain-app-is-useless-if-it-s-slow/) · Nov 2, 2026
 - [My water heater switch only answered to its own app. Now my OpenClaw assistant runs it.](https://bengreenberg.dev/blog/my-water-heater-switch-only-answered-to-its-own-app-now-my-openclaw-assistant-runs-it/) · Oct 31, 2026
 - [USDG markets are live. Your integration can be next.](https://bengreenberg.dev/blog/usdg-markets-are-live-your-integration-can-be-next/) · Oct 23, 2026
-- [Your MCP Debug Log Should Not Become a Credential Store](https://bengreenberg.dev/blog/your-mcp-debug-log-should-not-become-a-credential-store/) · Oct 15, 2026
 
 [All writing](https://www.bengreenberg.dev/blog?ref=github-profile)
 
