@@ -39,6 +39,13 @@
  },
  "contributions": [
   {
+   "repo": "openclaw/openclaw",
+   "number": 192062,
+   "title": "fix: report size mismatches in OpenAI subscription image generation",
+   "url": "https://github.com/openclaw/openclaw/pull/192062",
+   "merged_at": "2026-11-13T05:15:37Z"
+  },
+  {
    "repo": "aaif-goose/goose",
    "number": 13266,
    "title": "fix(providers): report Bedrock truncation with streaming disabled",
@@ -51,13 +58,6 @@
    "title": "fix: omit progress text from cron output on claude-cli",
    "url": "https://github.com/openclaw/openclaw/pull/191737",
    "merged_at": "2026-11-03T08:11:38Z"
-  },
-  {
-   "repo": "openclaw/openclaw",
-   "number": 190340,
-   "title": "fix: render HTML headings in Telegram rich messages",
-   "url": "https://github.com/openclaw/openclaw/pull/190340",
-   "merged_at": "2026-11-01T14:59:42Z"
   }
  ],
  "talks": [
